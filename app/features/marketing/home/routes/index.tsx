@@ -5,7 +5,7 @@ import Home from '../components/home'
 
 export async function loader() {
 	return {
-		title: 'Codenity Stack - Home',
+		title: 'Marathon Group',
 	}
 }
 

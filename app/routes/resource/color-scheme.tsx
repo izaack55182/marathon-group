@@ -11,8 +11,8 @@ import { z } from 'zod'
 
 export const ColorSchemeSchema = z
 	.enum(['dark', 'light', 'system']) // Possible color schemes
-	.default('system') // If there's no cookie, default to "system"
-	.catch('system') // In case of an error, default to "system"
+	.default('light') // If there's no cookie, default to "system"
+	.catch('light') // In case of an error, default to "system"
 
 export type ColorScheme = z.infer<typeof ColorSchemeSchema>
 

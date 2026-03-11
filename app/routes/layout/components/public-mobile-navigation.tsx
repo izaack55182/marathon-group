@@ -12,12 +12,14 @@ export function MobileNavigation() {
 
 	const menuItems = [
 		{ label: 'Inicio', href: '/', icon: 'house' as const },
-		{ label: 'Experiencia DX', href: '#developer-experience', icon: 'code' as const },
-		{ label: 'Casos de Uso', href: '#use-cases', icon: 'rocket' as const },
-		{ label: 'Stack Features', href: '#features', icon: 'zap' as const },
-		{ label: 'Backend & Data', href: '#backend', icon: 'layers' as const },
-		{ label: 'Arquitectura', href: '#architecture', icon: 'globe' as const },
-	]
+		{ label: 'Participación Industrial', href: '#', icon: 'factory' as const },
+		{ label: 'Divisiones', href: '#', icon: 'layout-grid' as const },
+		{ label: 'Marcas y catálogos', href: '#', icon: 'book-open' as const },
+		{ label: 'Alianzas comerciales', href: '#', icon: 'handshake' as const },
+		{ label: 'Electrica', href: '#', icon: 'zap' as const },
+		{ label: 'ICT Networks', href: '#', icon: 'network' as const },
+		{ label: 'Contacto', href: '#', icon: 'contact' as const },
+	] as const
 
 	return (
 		<div className="md:hidden">
@@ -37,8 +39,8 @@ export function MobileNavigation() {
 					className="w-[300px] sm:w-[380px] bg-background/60 backdrop-blur-3xl border-l border-border/40 p-0 flex flex-col"
 				>
 					{/* Background Accents */}
-					<div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 blur-[100px] pointer-events-none -mr-32 -mt-32 rounded-full" />
-					<div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 blur-[100px] pointer-events-none -ml-32 -mb-32 rounded-full" />
+					<div className="absolute top-0 right-0 w-64 h-64 bg-red-500/10 blur-[100px] pointer-events-none -mr-32 -mt-32 rounded-full" />
+					<div className="absolute bottom-0 left-0 w-64 h-64 bg-red-600/10 blur-[100px] pointer-events-none -ml-32 -mb-32 rounded-full" />
 
 					<SheetHeader className="p-8 text-left border-b border-border/10 relative z-10">
 						<div className="flex items-center justify-between">
@@ -58,7 +60,7 @@ export function MobileNavigation() {
 									onClick={() => setOpen(false)}
 									className="flex items-center gap-4 px-4 py-4 rounded-2xl group hover:bg-foreground/[0.03] active:scale-[0.98] border border-transparent hover:border-border/10"
 								>
-									<div className="size-10 rounded-xl bg-muted/50 flex items-center justify-center group-hover:bg-sky-500/10 group-hover:text-sky-400">
+									<div className="size-10 rounded-xl bg-muted/50 flex items-center justify-center group-hover:bg-red-500/10 group-hover:text-red-400">
 										<Icon
 											name={item.icon}
 											className="size-5 transition-transform duration-300 group-hover:scale-110"

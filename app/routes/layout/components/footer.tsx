@@ -6,17 +6,14 @@ export function Footer() {
 			<div className="container mx-auto px-4 flex flex-col items-center gap-8">
 				{/* Navigation */}
 				<div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium text-muted-foreground/60">
-					<Link to="/#features" className="hover:text-foreground transition-colors">
-						Features
+					<Link to="/#" className="hover:text-foreground transition-colors">
+						Home
 					</Link>
-					<Link to="/#backend" className="hover:text-foreground transition-colors">
-						Backend
+					<Link to="/#servicios" className="hover:text-foreground transition-colors">
+						Servicios
 					</Link>
-					<Link to="/#database" className="hover:text-foreground transition-colors">
-						Database
-					</Link>
-					<Link to="/#use-cases" className="hover:text-foreground transition-colors">
-						Use Cases
+					<Link to="/#contacto" className="hover:text-foreground transition-colors">
+						Contacto
 					</Link>
 				</div>
 

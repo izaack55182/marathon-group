@@ -1,88 +1,103 @@
-import { Badge } from '@/components/ui/badge'
+import { motion } from 'motion/react'
 import { Button } from '@/components/ui/button'
-import { Icon } from '@/components/ui/icon'
-import { RetroGrid } from '@/components/ui/retro-grid'
-import { STACK_PILLS } from '../constants'
+import { HERO_DATA } from '../constants'
 
 export function Hero() {
 	return (
-		<section className="relative flex min-h-svh w-full flex-col items-center justify-center pb-6 px-4 text-center overflow-hidden">
-			{/* Background grid - Hidden on mobile to prevent GPU flicker */}
-			<RetroGrid className="opacity-40 transition-none hidden md:block" />
-			<div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background z-[1] transition-none" />
-
-			<div className="relative z-10 flex flex-col items-center gap-6 lg:gap-8 max-w-7xl mx-auto">
-				{/* Version badge */}
-				<Badge
-					variant="secondary"
-					className="gap-2 rounded-full px-5 py-2 text-sm cursor-pointer hover:bg-muted border-border/50 transition-none"
-				>
-					<span className="h-1.5 w-1.5 rounded-full bg-orange-400 md:animate-pulse shadow-[0_0_8px_2px_rgba(249,115,22,0.5)]" />
-					En Desarrollo • Building in Public
-					<Icon name="arrow-right" className="h-3 w-3" />
-				</Badge>
-
-				{/* Headline */}
-				<h1 className="text-5xl md:text-6xl lg:text-[90px] font-black tracking-tighter leading-[0.9] text-foreground">
-					Crea <span className="text-sky-400">experiencias</span>
-					<br />
-					digitales de <span className="text-emerald-400">alto nivel.</span>
-				</h1>
-
-				{/* Subtext */}
-				<p className="max-w-3xl text-base md:text-lg text-muted-foreground leading-relaxed">
-					Impulsado por el open-source{' '}
-					<span className="text-foreground font-black tracking-tight underline decoration-sky-400/30 decoration-2 underline-offset-4">
-						Codenity Stack
-					</span>
-					. Potenciado por herramientas modernas para convertir tu visión en una realidad global e
-					instantánea.
-				</p>
-
-				{/* CTAs */}
-				<div className="flex flex-col sm:flex-row gap-4 mt-2">
-					<Button
-						size="lg"
-						disabled
-						className="h-14 px-12 rounded-xl gap-2 text-base font-bold bg-primary/40 text-primary-foreground/40 border border-primary/10 shadow-none cursor-not-allowed"
-					>
-						Accesible Próximamente
-					</Button>
-				</div>
-
-				{/* Stack icons - Vibrant & Larger */}
-				<div className="flex flex-col items-center gap-6 lg:gap-12 mt-12 lg:mt-18">
-					<span
-						className="text-[22px] font-mono italic text-muted-foreground/60"
-						style={{ fontVariationSettings: '"CASL" 1, "CRSV" 1' }}
-					>
-						Creado con:
-					</span>
-					<div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 lg:gap-16 px-4 max-w-5xl">
-						{STACK_PILLS.map((pill) => (
-							<div
-								key={pill.label}
-								className="group relative flex flex-col items-center gap-3 transition-transform duration-300 hover:scale-110"
-							>
-								<div className="relative z-10 brightness-110 dark:brightness-125">
-									<img
-										src={pill.logo}
-										alt={pill.label}
-										className="w-8 h-8 md:w-12 md:h-12 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
-										width={48}
-										height={48}
-									/>
-								</div>
-
-								{/* Minimal Tooltip/Label */}
-								<span className="text-[10px] font-black uppercase tracking-[1px] text-muted-foreground opacity-50 group-hover:opacity-100 transition-opacity">
-									{pill.label}
-								</span>
-							</div>
-						))}
-					</div>
-				</div>
+		<section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+			{/* BACKGROUND IMAGE WITH OVERLAY */}
+			<div className="absolute inset-0 z-0">
+				<img
+					src={HERO_DATA.images.background}
+					alt="Datacenter Racks"
+					className="h-full w-full object-cover scale-105"
+				/>
+				<div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+				<div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
 			</div>
+
+			<div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
+				{/* TEXT CONTENT */}
+				<motion.div
+					initial={{ opacity: 0, x: -50 }}
+					animate={{ opacity: 1, x: 0 }}
+					transition={{ duration: 0.8, ease: 'easeOut' }}
+					className="flex-1 text-left"
+				>
+					<motion.h1 
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.2, duration: 0.8 }}
+						className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white leading-none mb-6"
+					>
+						{HERO_DATA.title} <br />
+						<span className="text-red-600">{HERO_DATA.titleAccent}</span>
+					</motion.h1>
+					
+					<motion.p 
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.4, duration: 0.8 }}
+						className="max-w-xl text-lg md:text-xl text-white/80 font-medium leading-relaxed mb-8 border-l-4 border-red-600 pl-6"
+					>
+						{HERO_DATA.description}
+					</motion.p>
+
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.6, duration: 0.8 }}
+					>
+						<Button
+							size="lg"
+							className="h-16 px-10 rounded-none bg-red-600 hover:bg-red-700 text-white font-black uppercase tracking-widest text-lg transition-all duration-300 hover:scale-105 active:scale-95"
+						>
+							{HERO_DATA.ctaText}
+						</Button>
+					</motion.div>
+				</motion.div>
+
+				{/* PRODUCT IMAGE (FLOATING) */}
+				<motion.div
+					initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+					animate={{ opacity: 1, scale: 1, rotate: 0 }}
+					transition={{ duration: 1, ease: 'backOut' }}
+					className="flex-1 flex justify-center lg:justify-end relative"
+				>
+					<motion.div
+						animate={{ 
+							y: [0, -20, 0],
+							rotate: [0, 2, 0]
+						}}
+						transition={{ 
+							duration: 6, 
+							repeat: Infinity, 
+							ease: "easeInOut" 
+						}}
+						className="relative z-10"
+					>
+						<img
+							src={HERO_DATA.images.product}
+							alt="Fiber Optic Jumper"
+							className="w-[300px] md:w-[450px] lg:w-[600px] h-auto drop-shadow-[0_20px_50px_rgba(239,68,68,0.3)]"
+						/>
+					</motion.div>
+					
+					{/* SUBTLE GLOW BEHIND PRODUCT */}
+					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-600/20 blur-[100px] rounded-full" />
+				</motion.div>
+			</div>
+
+			{/* SCROLL INDICATOR */}
+			<motion.div 
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 2, duration: 1 }}
+				className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+			>
+				<span className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">Scroll</span>
+				<div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent" />
+			</motion.div>
 		</section>
 	)
 }

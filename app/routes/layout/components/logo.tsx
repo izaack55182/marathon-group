@@ -29,16 +29,19 @@ export default function Logo({ redirect, className, variant, alt, theme }: LogoP
 	const finalTheme = theme ?? preferredColorScheme
 
 	// Fallback to 'long' if 'icon' assets are missing
-	const logoVariant = variant === 'icon' ? 'long' : variant
+	const logoVariant = variant === 'icon' ? 'light' : variant
 	const themeSuffix = finalTheme === 'dark' ? 'dark' : 'light'
+
+	// If using the new marathon logo, it might not follow the old 'long' naming convention yet
+	const logoPath = `/images/logo/marathon-${themeSuffix}.svg`
 
 	return (
 		<Link to={redirect ? redirect : '/'}>
 			<img
 				decoding="sync"
 				className={cn(logoVariants({ variant }), 'transition-none', className)}
-				alt={alt ? alt : 'Codenity Logo'}
-				src={`/images/logo/codenity-${logoVariant}-${themeSuffix}.svg`}
+				alt={alt ? alt : 'Marathon Group Logo'}
+				src={logoPath}
 				width={variant === 'icon' ? 28 : 160}
 				height={variant === 'icon' ? 28 : 40}
 			/>
