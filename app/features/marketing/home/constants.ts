@@ -26,25 +26,25 @@ export const SOLUTIONS: SolutionItem[] = [
 		title: 'Asesoría de proyectos',
 		description:
 			'Ofrecemos asesoría en la especificación técnica de proyectos, contamos con amplia experiencia en los diferentes ámbitos industriales.',
-		icon: '/images/services/project-consulting.png',
+		icon: '/images/services/project-consulting.webp',
 	},
 	{
 		title: 'Entregas Express',
 		description:
 			'Contamos con alianzas estratégicas terrestres y aéreas para cumplir con las demandas de tiempo de nuestros clientes.',
-		icon: '/images/services/express-deliveries.png',
+		icon: '/images/services/express-deliveries.webp',
 	},
 	{
 		title: 'Logística',
 		description:
 			'Comprendemos que la manipulación de nuestros materiales y la entrega de los productos en tiempo son esenciales para nuestros clientes.',
-		icon: '/images/services/logistics.png',
+		icon: '/images/services/logistics.webp',
 	},
 	{
 		title: 'Suministro',
 		description:
 			'Con el equipo de empresas que representamos, cubrimos la cadena de abastecimiento de productos de mayor rotación.',
-		icon: '/images/services/supply.png',
+		icon: '/images/services/supply.webp',
 	},
 ]
 
@@ -53,8 +53,8 @@ export const INDUSTRIAL_DATA = {
 	phone: '222 690 6700',
 	ctaText: '¡Contáctanos!',
 	images: {
-		background: '/images/services/infrastructure.jpg',
-		worker: '/images/services/worker.png',
+		background: '/images/services/infrastructure.webp',
+		worker: '/images/services/worker.webp',
 	}
 }
 
@@ -69,51 +69,51 @@ export type ParticipationItem = {
 export const PARTICIPATION_DATA: ParticipationItem[] = [
 	{
 		title: 'Automotriz',
-		image: '/images/industrial-participation/automotive-participation.jpg',
+		image: '/images/industrial-participation/automotive-participation.webp',
 		description: 'Sistemas de automatización y cableado para líneas de producción vehicular.',
 	},
 	{
 		title: 'Gas & oil',
-		image: '/images/industrial-participation/gas-participation.jpg',
+		image: '/images/industrial-participation/gas-participation.webp',
 		description: 'Infraestructura crítica y redes robustas para entornos extremos.',
 	},
 	{
 		title: 'Textil',
-		image: '/images/industrial-participation/textil-participation.jpg',
+		image: '/images/industrial-participation/textil-participation.webp',
 		description: 'Soluciones de conectividad para maquinaria textil de alta precisión.',
 	},
 	{
 		title: 'TI',
-		image: '/images/industrial-participation/ti-participation.jpg',
+		image: '/images/industrial-participation/ti-participation.webp',
 		description: 'Data centers y redes de datos de alto rendimiento.',
 	},
 	{
 		title: 'Minería',
-		image: '/images/industrial-participation/mining-participation.jpg',
+		image: '/images/industrial-participation/mining-participation.webp',
 		description: 'Comunicaciones y automatización para operaciones mineras seguras.',
 	},
 	{
 		title: 'Química',
-		image: '/images/industrial-participation/chemical-participation.jpg',
+		image: '/images/industrial-participation/chemical-participation.webp',
 		description: 'Redes de control y monitoreo para plantas de procesamiento químico.',
 	},
 	{
 		title: 'Retail',
-		image: '/images/industrial-participation/retail-participation.jpg',
+		image: '/images/industrial-participation/retail-participation.webp',
 		description: 'Sistemas de comunicación e infraestructura para grandes superficies.',
 	},
 	{
 		title: 'Acerera',
-		image: '/images/industrial-participation/steelmaker-participation.jpg',
+		image: '/images/industrial-participation/steelmaker-participation.webp',
 		description: 'Infraestructura de red vital para entornos de salud críticos.',
 	},
 	{
 		title: 'Hospitales',
-		image: '/images/industrial-participation/hospital-participation.jpg',
+		image: '/images/industrial-participation/hospital-participation.webp',
 		description: 'Infraestructura de red vital para entornos de salud críticos.',
 	}, {
 		title: 'Alimenticia',
-		image: '/images/industrial-participation/food-participation.jpg',
+		image: '/images/industrial-participation/food-participation.webp',
 		description: 'Infraestructura de red vital para entornos de salud críticos.',
 	},
 ]
@@ -152,27 +152,27 @@ export const DIVISIONS_DATA = {
 			items: [
 				{
 					title: 'Herramientas y accesorios',
-					icon: '/images/divisions/accesories-and-tools.png',
+					icon: '/images/divisions/accesories-and-tools.webp',
 					color: '#84cc16', // lime-500
 				},
 				{
 					title: 'Cableado eléctrico',
-					icon: '/images/divisions/electrical-wiring.png',
+					icon: '/images/divisions/electrical-wiring.webp',
 					color: '#ef4444', // red-500
 				},
 				{
 					title: 'Automatización y control',
-					icon: '/images/divisions/automation-and-control.png',
+					icon: '/images/divisions/automation-and-control.webp',
 					color: '#f97316', // orange-500
 				},
 				{
 					title: 'Canalización',
-					icon: '/images/divisions/canalization.png',
+					icon: '/images/divisions/canalization.webp',
 					color: '#f59e0b', // amber-500
 				},
 				{
 					title: 'Iluminación',
-					icon: '/images/divisions/ilumination.png',
+					icon: '/images/divisions/ilumination.webp',
 					color: '#3b82f6', // blue-500
 				},
 			],
@@ -183,22 +183,22 @@ export const DIVISIONS_DATA = {
 			items: [
 				{
 					title: 'Cableado Estructurado',
-					icon: '/images/divisions/structure-wiring.png',
+					icon: '/images/divisions/structure-wiring.webp',
 					color: '#ef4444',
 				},
 				{
 					title: 'Racks y Gabinetes',
-					icon: '/images/divisions/racks-division.png',
+					icon: '/images/divisions/racks-division.webp',
 					color: '#f59e0b',
 				},
 				{
 					title: 'Data Center',
-					icon: '/images/divisions/data-center-division.png',
+					icon: '/images/divisions/data-center-division.webp',
 					color: '#3b82f6',
 				},
 				{
 					title: 'Ethernet Industrial',
-					icon: '/images/divisions/ethernet-industrial-division.png',
+					icon: '/images/divisions/ethernet-industrial-division.webp',
 					color: '#10b981',
 				},
 			],
@@ -429,7 +429,7 @@ export const ICT_CATEGORIES = [
 		label: 'Ethernet industrial',
 		icon: Plug,
 		description: 'Conectividad robusta y blindada diseñada para resistir los entornos industriales más exigentes.',
-		image: '/images/ict-division/ethernet-industrial.png',
+		image: '/images/ict-division/ethernet-industrial.webp',
 		sections: [
 			{
 				title: 'Planta de Producción',

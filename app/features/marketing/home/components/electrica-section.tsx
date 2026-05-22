@@ -44,7 +44,7 @@ function BrandCarousel({ categoryId }: { categoryId: string }) {
 						<CarouselItem key={`${brand}-${i}`} className="pl-6 basis-full sm:basis-1/2 lg:basis-1/3">
 							<div className="h-32 flex items-center justify-center bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
 								<img
-									src={`/images/${brandsData.folder}/${brand}.png`}
+									src={`/images/${brandsData.folder}/${brand}.webp`}
 									alt={brand}
 									className="max-h-full max-w-full object-contain scale-160"
 									onError={(e) => {
@@ -198,12 +198,12 @@ export function ElectricaSection() {
 									{/* CTA Banner */}
 									<div className="pt-10 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6">
 										<p className="text-slate-500 text-sm font-light">¿Necesitas asesoría técnica para tu proyecto eléctrico?</p>
-										<a 
+										<a
 											href="https://wa.me/5212226906700?text=Hola,%20necesito%20asesoría%20técnica%20para%20un%20proyecto%20eléctrico."
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											<Button 
+											<Button
 												variant="default"
 												size="lg"
 												className="px-8 py-6 rounded-xl font-bold text-sm transition-all shadow-xl shadow-primary/20 uppercase tracking-widest leading-none"
