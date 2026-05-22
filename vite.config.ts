@@ -67,7 +67,7 @@ export default defineConfig({
 				/^\/static\/.+/,
 				/^\/node_modules\/.*/,
 				'/assets/**',
-				'/app/**',
+				'/src/app/**',
 				/\?(?:inline|url|no-inline|raw|import(?:&(?:inline|url|no-inline|raw)?)?)$/,
 				/\?t=\d+&url$/,
 			],

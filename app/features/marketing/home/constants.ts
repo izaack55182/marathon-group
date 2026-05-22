@@ -2,7 +2,6 @@ import {
 	Zap, Cpu, Network, Lightbulb, Wrench, Wind, Ship, Plane, Car, Building, Trophy, Bed, Hospital,
 	Database, Server, Plug, Wifi, ShieldCheck, Globe, Waypoints
 } from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
 
 export const HERO_DATA = {
 	title: 'ICT',

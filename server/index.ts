@@ -8,21 +8,29 @@ import { epicLogger } from './middleware/epic-logger.ts'
 import { removeTrailingSlash } from './middleware/remove-trailing-slash.ts'
 import { secureHeadersMiddleware } from './middleware/secure-headers.ts'
 import { rateLimitMiddleware } from './middleware/rate-limit.ts'
+import { initEnv } from '@/utils/env.server.ts'
 
 const app = new Hono()
+
+app.use('*', async (c, next) => {
+	initEnv(c.env)
+	await next()
+})
 
 app.use('*', epicLogger())
 app.use(removeTrailingSlash)
 
-// SVG MIME Type Fix (Ensures icons are rendered correctly by the browser)
 app.use('*', async (c, next) => {
 	await next()
-	if (c.req.path.endsWith('.svg')) {
+	const path = c.req.path
+	if (path.endsWith('.svg')) {
 		c.header('Content-Type', 'image/svg+xml')
+	}
+	if (path.match(/\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2|ttf|otf|css|js)$/)) {
+		c.header('Cache-Control', 'public, max-age=31536000, immutable')
 	}
 })
 
-// Ensure HTTPS only
 app.use('*', async (c, next) => {
 	if (c.req.method !== 'GET') return await next()
 
@@ -41,15 +49,12 @@ app.use('*', rateLimitMiddleware)
 app.use('*', poweredBy({ serverName: 'CODENITY' }))
 
 // No indexing if configured
-if (!ALLOW_INDEXING()) {
-	app.use(
-		'*',
-		createMiddleware(async (c, next) => {
-			c.header('X-Robots-Tag', 'noindex, nofollow')
-			await next()
-		})
-	)
-}
+app.use('*', async (c, next) => {
+	if (!ALLOW_INDEXING()) {
+		c.header('X-Robots-Tag', 'noindex, nofollow')
+	}
+	await next()
+})
 
 // Export load context for adapter
 export { getLoadContext }
