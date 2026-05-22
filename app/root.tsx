@@ -1,4 +1,4 @@
-﻿import {
+import {
 	Links,
 	Meta,
 	type MetaFunction,
@@ -16,7 +16,7 @@ import { createDomain, getMeta } from '@/utils/misc'
 // COMPONENTS
 import { EpicProgress } from './components/epic-progress'
 import { GeneralErrorBoundary } from './components/error-boundary'
-const iconsHref = '/icons/sprite.svg'
+import iconsHref from '@/components/ui/icons/sprite.svg'
 
 // ROUTES
 import { useTheme } from './routes/resource/color-scheme'

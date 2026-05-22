@@ -15,23 +15,6 @@ export default [
 	// 1. PUBLIC / MARKETING
 	...marketingRoutes,
 
-	// 2. AUTHENTICATION (SECURITY)
-	...securityRoutes,
-
-	// 3. APPLICATION (CENTRALIZED)
-	...prefix('c', [
-		layout('routes/layout/layout-app.tsx', [
-			...coreRoutes,
-			...crmRoutes,
-			...userRoutes,
-			...settingsRoutes,
-			...accountingRoutes,
-			...inventoryRoutes,
-			...invoicingRoutes,
-			...analyticsRoutes,
-		]),
-	]),
-
 	// 4. RESOURCE ROUTES
 	...prefix('r', [
 		route('color-scheme', 'routes/resource/color-scheme.tsx'),

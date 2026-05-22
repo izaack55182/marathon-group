@@ -3,6 +3,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/utils/misc'
 import Logo from './logo'
 import { MobileNavigation } from './public-mobile-navigation'
+import { Factory, Layers, BookOpen, Handshake, Zap, Cpu, Network, Lightbulb, Wrench, Server, Database, Plug, Wind, Ship, Plane, Car, Building, Trophy, Bed, Hospital, ChevronDown } from 'lucide-react'
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -34,21 +35,26 @@ export function Header() {
 										<NavigationMenuContent>
 											<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
 												{[
-													{ label: 'Participación Industrial', desc: 'Presencia en sectores clave.' },
-													{ label: 'Divisiones', desc: 'Especialización por industria.' },
-													{ label: 'Marcas y catálogos', desc: 'Nuestra oferta completa.' },
-													{ label: 'Alianzas comerciales', desc: 'Socios estratégicos.' },
+													{ label: 'Participación Industrial', desc: 'Presencia en sectores clave.', icon: Factory, href: '/#industrial-participation' },
+													{ label: 'Divisiones', desc: 'Especialización por industria.', icon: Layers, href: '/#divisiones' },
+													{ label: 'Marcas y catálogos', desc: 'Nuestra oferta completa.', icon: BookOpen, href: '/#alianzas' },
+													{ label: 'Alianzas comerciales', desc: 'Socios estratégicos.', icon: Handshake, href: '/#alianzas' },
 												].map((item) => (
 													<li key={item.label}>
 														<NavigationMenuLink asChild>
 															<Link
-																to="#"
-																className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+																to={item.href}
+																className="flex items-start gap-4 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
 															>
-																<div className="text-sm font-medium leading-none">{item.label}</div>
-																<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
-																	{item.desc}
-																</p>
+																<div className="mt-1 flex-shrink-0 text-red-500">
+																	<item.icon className="w-5 h-5" />
+																</div>
+																<div className="space-y-1">
+																	<div className="text-sm font-medium leading-none">{item.label}</div>
+																	<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
+																		{item.desc}
+																	</p>
+																</div>
 															</Link>
 														</NavigationMenuLink>
 													</li>
@@ -65,22 +71,27 @@ export function Header() {
 										<NavigationMenuContent>
 											<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
 												{[
-													{ label: 'Cableado eléctrico', desc: 'Soluciones de conducción segura.' },
-													{ label: 'Automatización y control', desc: 'Sistemas inteligentes de gestión.' },
-													{ label: 'Canalización', desc: 'Protección y organización de redes.' },
-													{ label: 'Iluminación', desc: 'Eficiencia y diseño lumínico.' },
-													{ label: 'Herramientas y accesorios', desc: 'Equipamiento profesional.' },
+													{ label: 'Cableado eléctrico', desc: 'Soluciones de conducción segura.', icon: Zap, id: 'cableado' },
+													{ label: 'Automatización y control', desc: 'Sistemas inteligentes de gestión.', icon: Cpu, id: 'automatizacion' },
+													{ label: 'Canalización', desc: 'Protección y organización de redes.', icon: Network, id: 'canalizacion' },
+													{ label: 'Iluminación', desc: 'Eficiencia y diseño lumínico.', icon: Lightbulb, id: 'iluminacion' },
+													{ label: 'Herramientas y accesorios', desc: 'Equipamiento profesional.', icon: Wrench, id: 'herramientas' },
 												].map((item) => (
 													<li key={item.label}>
 														<NavigationMenuLink asChild>
 															<Link
-																to="#"
-																className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+																to={`/electrica?cat=${item.id}`}
+																className="flex items-start gap-4 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
 															>
-																<div className="text-sm font-medium leading-none">{item.label}</div>
-																<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
-																	{item.desc}
-																</p>
+																<div className="mt-1 flex-shrink-0 text-red-500">
+																	<item.icon className="w-5 h-5" />
+																</div>
+																<div className="space-y-1">
+																	<div className="text-sm font-medium leading-none">{item.label}</div>
+																	<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
+																		{item.desc}
+																	</p>
+																</div>
 															</Link>
 														</NavigationMenuLink>
 													</li>
@@ -89,7 +100,6 @@ export function Header() {
 										</NavigationMenuContent>
 									</NavigationMenuItem>
 
-									{/* ICT NETWORKS (DROPDOWN) */}
 									<NavigationMenuItem>
 										<NavigationMenuTrigger className="bg-transparent text-base font-semibold hover:bg-accent/50">
 											ICT Networks
@@ -97,21 +107,26 @@ export function Header() {
 										<NavigationMenuContent>
 											<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
 												{[
-													{ label: 'Cableado estructurado', desc: 'Infraestructura de red confiable.' },
-													{ label: 'Data center', desc: 'Soluciones para centros de datos.' },
-													{ label: 'Racks y gabinetes', desc: 'Gestión y soporte de equipos.' },
-													{ label: 'Ethernet industrial', desc: 'Conectividad robusta para plantas.' },
+													{ label: 'Cableado estructurado', desc: 'Infraestructura de red confiable.', icon: Network, id: 'cableado-estructurado' },
+													{ label: 'Data center', desc: 'Soluciones para centros de datos.', icon: Database, id: 'data-center' },
+													{ label: 'Racks y gabinetes', desc: 'Gestión y soporte de equipos.', icon: Server, id: 'racks-gabinetes' },
+													{ label: 'Ethernet industrial', desc: 'Conectividad robusta para plantas.', icon: Plug, id: 'ethernet-industrial' },
 												].map((item) => (
 													<li key={item.label}>
 														<NavigationMenuLink asChild>
 															<Link
-																to="#"
-																className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+																to={`/ict-networks?cat=${item.id}`}
+																className="flex items-start gap-4 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
 															>
-																<div className="text-sm font-medium leading-none">{item.label}</div>
-																<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
-																	{item.desc}
-																</p>
+																<div className="mt-1 flex-shrink-0 text-blue-500">
+																	<item.icon className="w-5 h-5" />
+																</div>
+																<div className="space-y-1">
+																	<div className="text-sm font-medium leading-none">{item.label}</div>
+																	<p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
+																		{item.desc}
+																	</p>
+																</div>
 															</Link>
 														</NavigationMenuLink>
 													</li>

@@ -29,15 +29,13 @@ export function QualityService() {
 							className="flex items-center gap-3 mb-6"
 						>
 							<div className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center shadow-lg shadow-red-600/20">
-								<div className="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center text-[10px] font-bold text-white">
-									M
-								</div>
+								<Icon name="marathon-light-logo" className="h-4 md:h-5 w-auto text-white" />
 							</div>
 							<span className="text-white/60 uppercase tracking-[0.3em] text-xs font-bold">
 								{QUALITY_SERVICE_DATA.tagline}
 							</span>
 						</motion.div>
-						
+
 						<motion.h2
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
@@ -67,16 +65,16 @@ export function QualityService() {
 										<div className="mb-6 text-white transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
 											<Icon name={metric.icon as IconName} className="w-8 h-8" />
 										</div>
-										
+
 										{/* Value */}
 										<div className="flex flex-col gap-1">
 											<span className="text-4xl md:text-5xl font-black text-white tracking-tighter">
 												{metric.value}
 											</span>
-											
+
 											{/* Red separator line */}
 											<div className="w-12 h-1 bg-red-600 my-4 transition-all duration-500 group-hover:w-full" />
-											
+
 											<span className="text-white/60 text-sm font-medium uppercase tracking-wider leading-tight">
 												{metric.label}
 											</span>

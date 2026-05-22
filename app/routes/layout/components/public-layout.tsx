@@ -1,6 +1,6 @@
 // app/layouts/public-layout.tsx
 
-import { Footer } from '@/routes/layout/components/footer'
+import { Footer } from '@/routes/layout/components/public-footer'
 import { Header } from './public-header'
 
 export function Layout({ children }: { children: React.ReactNode }) {

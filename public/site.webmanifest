@@ -1,6 +1,6 @@
 {
-	"name": "Codenity Stack",
-	"short_name": "Codenity",
+	"name": "Marathon Group",
+	"short_name": "Marathon",
 	"description": "Codenity Stack is a full-stack web development framework built with React Router, Bun, Cloudflare, and more.",
 	"start_url": "/",
 	"display": "standalone",

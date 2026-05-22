@@ -1,3 +1,9 @@
+import {
+	Zap, Cpu, Network, Lightbulb, Wrench, Wind, Ship, Plane, Car, Building, Trophy, Bed, Hospital,
+	Database, Server, Plug, Wifi, ShieldCheck, Globe, Waypoints
+} from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
+
 export const HERO_DATA = {
 	title: 'ICT',
 	titleAccent: 'Networks',
@@ -198,4 +204,285 @@ export const DIVISIONS_DATA = {
 			],
 		},
 	],
+}
+
+export const TESTIMONIALS_DATA = {
+	title: 'Opiniones',
+	description: 'En Marathon Group estamos seguros de que la creación de alianzas comerciales permite a nuestros clientes y usuarios posicionarse como los más competitivos en el mercado.',
+	items: [
+		{
+			quote: 'Excelente servicio y atención, los recomiendo ampliamente, los mejores en el mercado.',
+			author: 'Antonio Flores',
+			position: 'Ingeniero ICT',
+		},
+		{
+			quote: 'Muy buen servicio siempre son muy confiables y los mejores precios sin dudarlo.',
+			author: 'Omar Pérez',
+			position: 'Ingeniero Helukabel',
+		},
+		{
+			quote: 'Todo muy rápido y puntual. Muy buen especialista.',
+			author: 'Juan Escobar',
+			position: 'Ingeniero CFE',
+		},
+	],
+}
+
+export const BRAND_SLOTS = [
+	['aplicaciones-ilsa', 'argo', 'aritex', 'aronal'],
+	['audi', 'bachoco', 'basf', 'bmw'],
+	['deacero', 'demek', 'dti', 'durr'],
+	['eisenmann', 'grupo-acerero', 'hirshchmann', 'ims'],
+	['pemex', 'polaquimia', 'proa', 'rassini'],
+	['schaeffler', 'sigosa', 'simec', 'skytex'],
+	['tenaris-tamsa', 'tenco', 'ternium', 'thyssenkrupp'],
+	['ti-america', 'treofan', 'tubacero', 'viscofan', 'volkwagen'],
+]
+
+export const ELECTRICA_CATEGORIES = [
+	{
+		id: 'cableado',
+		label: 'Cableado eléctrico',
+		icon: Zap,
+		description: 'Contamos con una amplia gama de cables eléctricos flexibles especiales para diferentes aplicaciones de baja, media y alta tensión.',
+		image: '/images/electrical-division/electrical-wiring.webp',
+		sections: [
+			{
+				title: 'Cableado Industrial',
+				color: 'text-primary',
+				borderColor: 'border-primary',
+				bgColor: 'bg-primary/5',
+				items: [
+					{ label: 'Energía Eléctrica', icon: Zap },
+					{ label: 'Energía Eólica', icon: Wind },
+					{ label: 'Buques', icon: Ship },
+					{ label: 'Aeropuertos', icon: Plane },
+					{ label: 'Automóvil', icon: Car },
+				]
+			},
+			{
+				title: 'Cableado Empresarial',
+				color: 'text-secondary',
+				borderColor: 'border-secondary',
+				bgColor: 'bg-secondary/5',
+				items: [
+					{ label: 'Oficinas', icon: Building },
+					{ label: 'Estadios y Sitios', icon: Trophy },
+					{ label: 'Hotelería', icon: Bed },
+					{ label: 'Hospitales', icon: Hospital },
+				]
+			}
+		]
+	},
+	{
+		id: 'automatizacion',
+		label: 'Automatización y control',
+		icon: Cpu,
+		description: 'Distribuimos una amplia gama de equipos electrónicos para los procesos de automatización y control de líneas de producción industrial.',
+		image: '/images/electrical-division/automatization-control.jpg',
+		sections: [
+			{
+				title: 'Sistemas de Control',
+				color: 'text-primary',
+				borderColor: 'border-primary',
+				bgColor: 'bg-primary/5',
+				items: [
+					{ label: 'PLC y HMI', icon: Cpu },
+					{ label: 'Sensores', icon: Zap },
+					{ label: 'Actuadores', icon: Wrench },
+				]
+			}
+		]
+	},
+	{
+		id: 'canalizacion',
+		label: 'Canalización',
+		icon: Network,
+		description: 'Comercializamos una extensa variedad de soportería los cuales permiten el cuidado de los conductores, protegiéndolos de daños mecánicos, químicos, altas temperaturas y humedad; así como canalización flexible para aplicaciones especiales.',
+		image: '/images/electrical-division/canalization.webp',
+		sections: [
+			{
+				title: 'Sistemas de Soporte',
+				color: 'text-primary',
+				borderColor: 'border-primary',
+				bgColor: 'bg-primary/5',
+				items: [
+					{ label: 'Charola de Malla', icon: Network },
+					{ label: 'Tubería Conduit', icon: Wrench },
+				]
+			}
+		]
+	},
+	{
+		id: 'iluminacion',
+		label: 'Iluminación',
+		icon: Lightbulb,
+		description: 'Disponemos de múltiples opciones en iluminación industrial, comercial y residencial; así como generación de energía fotovoltaica.',
+		image: '/images/electrical-division/ilumination.webp',
+		sections: [
+			{
+				title: 'Iluminación LED',
+				color: 'text-primary',
+				borderColor: 'border-primary',
+				bgColor: 'bg-primary/5',
+				items: [
+					{ label: 'Industrial High-Bay', icon: Lightbulb },
+					{ label: 'Oficinas / Panel', icon: Building },
+				]
+			}
+		]
+	},
+	{
+		id: 'herramientas',
+		label: 'Herramientas y accesorios',
+		icon: Wrench,
+		description: 'Contamos con herramientas y accesorios eléctricos de la más alta calidad, los cuales se adaptan a las necesidades de nuestros clientes. Estamos enfocamos en proveer soluciones a la medida a través de marcas premium como Milwaukee, Panduit, Burndy y Raco. Garantizando así un excelente desempeño y cumplimiento a los requerimientos del usuario final.',
+		image: '/images/electrical-division/tools.webp',
+		sections: [
+			{
+				title: 'Equipamiento',
+				color: 'text-primary',
+				borderColor: 'border-primary',
+				bgColor: 'bg-primary/5',
+				items: [
+					{ label: 'Herramienta Manual', icon: Wrench },
+					{ label: 'Equipos de Medición', icon: Zap },
+				]
+			}
+		]
+	}
+]
+
+export const ICT_CATEGORIES = [
+	{
+		id: 'cableado-estructurado',
+		label: 'Cableado estructurado',
+		icon: Network,
+		description: 'Soluciones de infraestructura de red de alto rendimiento para garantizar una conectividad fluida y escalable.',
+		image: '/images/ict-division/structured-cabling.webp',
+		sections: [
+			{
+				title: 'Redes Corporativas',
+				color: 'text-secondary',
+				borderColor: 'border-secondary',
+				bgColor: 'bg-secondary/5',
+				items: [
+					{ label: 'Cobre Cat 6/6A/7', icon: Network },
+					{ label: 'Fibra Óptica OM4/OM5', icon: Waypoints },
+					{ label: 'Sistemas de Gestión', icon: Globe },
+				]
+			},
+			{
+				title: 'Seguridad y Datos',
+				color: 'text-indigo-600',
+				borderColor: 'border-indigo-600',
+				bgColor: 'bg-indigo-50/5',
+				items: [
+					{ label: 'Seguridad Física', icon: ShieldCheck },
+					{ label: 'Puntos de Acceso WiFi', icon: Wifi },
+				]
+			}
+		]
+	},
+	{
+		id: 'data-center',
+		label: 'Data center',
+		icon: Database,
+		description: 'Soluciones críticas para centros de datos que requieren máxima confiabilidad, enfriamiento y eficiencia energética.',
+		image: '/images/ict-division/data-center.webp',
+		sections: [
+			{
+				title: 'Infraestructura Crítica',
+				color: 'text-secondary',
+				borderColor: 'border-secondary',
+				bgColor: 'bg-secondary/5',
+				items: [
+					{ label: 'Contención de Pasillos', icon: Database },
+					{ label: 'PDU Inteligentes', icon: Plug },
+					{ label: 'Fibra de Alta Densidad', icon: Network },
+				]
+			}
+		]
+	},
+	{
+		id: 'racks-gabinetes',
+		label: 'Racks y gabinetes',
+		icon: Server,
+		description: 'Sistemas de alojamiento y organización profesional para equipos activos y pasivos de red.',
+		image: '/images/ict-division/gabineters.webp',
+		sections: [
+			{
+				title: 'Gestión de Equipos',
+				color: 'text-secondary',
+				borderColor: 'border-secondary',
+				bgColor: 'bg-secondary/5',
+				items: [
+					{ label: 'Gabinetes de Piso', icon: Server },
+					{ label: 'Racks de 2 Postes', icon: Server },
+					{ label: 'Gestores de Cableado', icon: Waypoints },
+				]
+			}
+		]
+	},
+	{
+		id: 'ethernet-industrial',
+		label: 'Ethernet industrial',
+		icon: Plug,
+		description: 'Conectividad robusta y blindada diseñada para resistir los entornos industriales más exigentes.',
+		image: '/images/ict-division/ethernet-industrial.png',
+		sections: [
+			{
+				title: 'Planta de Producción',
+				color: 'text-secondary',
+				borderColor: 'border-secondary',
+				bgColor: 'bg-secondary/5',
+				items: [
+					{ label: 'Switching Industrial', icon: Cpu },
+					{ label: 'Cables M12 / IP67', icon: Plug },
+					{ label: 'Conectividad Fieldbus', icon: Network },
+				]
+			}
+		]
+	}
+]
+
+export const CATEGORY_BRANDS: Record<string, { folder: string; items: string[] }> = {
+	// Electrica
+	'cableado': {
+		folder: 'electrical-division/electrical-cabling',
+		items: ['viakon', 'ascable-recael', 'helukabel', 'general-cable', 'stabiloy', 'tfkable', 'bendel']
+	},
+	'automatizacion': {
+		folder: 'electrical-division/automatization',
+		items: ['celduc', 'lumberg-automation', 'phoenix-contact', 'power-electronics']
+	},
+	'canalizacion': {
+		folder: 'electrical-division/canalization',
+		items: ['charofil', 'igus', 'jupiter', 'panduir', 'tecnotray', 'unex']
+	},
+	'iluminacion': {
+		folder: 'electrical-division/ilumination',
+		items: ['beghelli', 'dialight', 'killarl', 'luceco']
+	},
+	'herramientas': {
+		folder: 'electrical-division/tools',
+		items: ['burndy', 'klein-tools', 'milwaukey', 'panduit', 'phoenix-contact', 'raco']
+	},
+	// ICT (Unified folder for brand assets)
+	'cableado-estructurado': {
+		folder: 'ict-division/structured-cable',
+		items: ['leoni', 'optral', 'datwyler']
+	},
+	'data-center': {
+		folder: 'ict-division/structured-cable',
+		items: ['leoni', 'optral', 'datwyler']
+	},
+	'racks-gabinetes': {
+		folder: 'ict-division/structured-cable',
+		items: ['leoni', 'optral', 'datwyler', 'nvent-hoffman']
+	},
+	'ethernet-industrial': {
+		folder: 'ict-division/structured-cable',
+		items: ['hirschmann']
+	},
 }

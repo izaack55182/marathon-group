@@ -6,7 +6,7 @@ import type { IconName } from '@/components/ui/icons/types'
 import { cn } from '@/utils/misc'
 
 // ASSETS
-const href = '/icons/sprite.svg'
+import href from './icons/sprite.svg'
 
 const sizeClassName = {
 	font: 'size-[1em]',

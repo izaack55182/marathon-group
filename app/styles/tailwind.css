@@ -196,9 +196,9 @@
 	--primary: oklch(0.6 0.25 25);
 	--primary-foreground: oklch(1 0 0);
 
-	/* SECONDARY - Very Light Red/Gray */
-	--secondary: oklch(0.97 0.01 25);
-	--secondary-foreground: oklch(0.3 0.2 25);
+	/* SECONDARY - Brand Blue (ICT) */
+	--secondary: oklch(0.5 0.15 250);
+	--secondary-foreground: oklch(0.98 0 0);
 
 	/* MUTED - Subtle Reddish Gray */
 	--muted: oklch(0.97 0.01 25);
@@ -253,9 +253,9 @@
 	--primary: oklch(0.65 0.25 25);
 	--primary-foreground: oklch(1 0 0);
 
-	/* SECONDARY - Darker Red */
-	--secondary: oklch(0.25 0.08 25);
-	--secondary-foreground: oklch(0.98 0.01 25);
+	/* SECONDARY - Bright Blue for Dark Mode */
+	--secondary: oklch(0.6 0.18 250);
+	--secondary-foreground: oklch(1 0 0);
 
 	/* MUTED */
 	--muted: oklch(0.25 0.08 25);

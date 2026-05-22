@@ -24,7 +24,7 @@ export function Hero() {
 					transition={{ duration: 0.8, ease: 'easeOut' }}
 					className="flex-1 text-left"
 				>
-					<motion.h1 
+					<motion.h1
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2, duration: 0.8 }}
@@ -33,8 +33,8 @@ export function Hero() {
 						{HERO_DATA.title} <br />
 						<span className="text-red-600">{HERO_DATA.titleAccent}</span>
 					</motion.h1>
-					
-					<motion.p 
+
+					<motion.p
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
@@ -48,12 +48,19 @@ export function Hero() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6, duration: 0.8 }}
 					>
-						<Button
-							size="lg"
-							className="h-16 px-10 rounded-none bg-red-600 hover:bg-red-700 text-white font-black uppercase tracking-widest text-lg transition-all duration-300 hover:scale-105 active:scale-95"
+						<a
+							href="https://wa.me/5212226906700?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20soluciones."
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-block"
 						>
-							{HERO_DATA.ctaText}
-						</Button>
+							<Button
+								size="lg"
+								className="h-16 px-10 rounded-none bg-red-600 hover:bg-red-700 text-white font-black uppercase tracking-widest text-lg transition-all duration-300 hover:scale-105 active:scale-95"
+							>
+								{HERO_DATA.ctaText}
+							</Button>
+						</a>
 					</motion.div>
 				</motion.div>
 
@@ -65,14 +72,14 @@ export function Hero() {
 					className="flex-1 flex justify-center lg:justify-end relative"
 				>
 					<motion.div
-						animate={{ 
+						animate={{
 							y: [0, -20, 0],
 							rotate: [0, 2, 0]
 						}}
-						transition={{ 
-							duration: 6, 
-							repeat: Infinity, 
-							ease: "easeInOut" 
+						transition={{
+							duration: 6,
+							repeat: Infinity,
+							ease: "easeInOut"
 						}}
 						className="relative z-10"
 					>
@@ -82,14 +89,14 @@ export function Hero() {
 							className="w-[300px] md:w-[450px] lg:w-[600px] h-auto drop-shadow-[0_20px_50px_rgba(239,68,68,0.3)]"
 						/>
 					</motion.div>
-					
+
 					{/* SUBTLE GLOW BEHIND PRODUCT */}
 					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-600/20 blur-[100px] rounded-full" />
 				</motion.div>
 			</div>
 
 			{/* SCROLL INDICATOR */}
-			<motion.div 
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ delay: 2, duration: 1 }}

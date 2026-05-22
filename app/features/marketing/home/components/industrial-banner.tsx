@@ -28,7 +28,7 @@ export function IndustrialBanner() {
 					<h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-8 max-w-2xl tracking-tighter">
 						{INDUSTRIAL_DATA.headline}
 					</h2>
-					
+
 					<div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10">
 						<div className="flex flex-col">
 							<span className="text-red-600 font-black text-4xl md:text-5xl tracking-tighter">
@@ -62,7 +62,7 @@ export function IndustrialBanner() {
 					<div className="relative -mb-1 lg:-mb-2">
 						{/* Glow effect behind worker */}
 						<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-red-600/10 blur-[120px] rounded-full pointer-events-none" />
-						
+
 						<img
 							src={INDUSTRIAL_DATA.images.worker}
 							alt="Industrial Expert"

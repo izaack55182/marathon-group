@@ -3,12 +3,18 @@
 <defs>
 <symbol viewBox="0 0 24 24" id="zap"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="x"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path></symbol>
+<symbol viewBox="0 0 24 24" id="wrench"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="users"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></g></symbol>
 <symbol viewBox="0 0 24 24" id="sun"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></g></symbol>
+<symbol viewBox="0 0 24 24" id="star"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="shield"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="settings"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></g></symbol>
+<symbol viewBox="0 0 24 24" id="server"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><path d="M6 6h.01M6 18h.01"></path></g></symbol>
+<symbol viewBox="0 0 24 24" id="server-crash"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M6 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2M6 6h.01M6 18h.01"></path><path d="m13 6l-4 6h6l-4 6"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="rocket"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="refresh-ccw"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9a9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5m-5 4a9 9 0 0 0 9 9a9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 16h5v5"></path></g></symbol>
+<symbol viewBox="0 0 24 24" id="plug"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22v-5m3-9V2m2 6a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zM9 8V2"></path></symbol>
+<symbol viewBox="0 0 24 24" id="phone"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"></path></symbol>
 <symbol viewBox="0 0 24 24" id="panel-left"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="panel-left-open"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18m5-12l3 3l-3 3"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="panel-left-close"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18m7-6l-3-3l3-3"></path></g></symbol>
@@ -16,149 +22,49 @@
 <symbol viewBox="0 0 24 24" id="network"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="6" height="6" x="16" y="16" rx="1"></rect><rect width="6" height="6" x="2" y="16" rx="1"></rect><rect width="6" height="6" x="9" y="2" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3m-7-4V8"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="moon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></symbol>
 <symbol viewBox="0 0 24 24" id="menu"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"></path></symbol>
-<symbol viewBox="0 0 80 80" fill="none" id="marathon-light">
-  
-  <g>
-      
-  <defs>
-    
-    <linearGradient id="landing-gen-frostBody" x1="0%" y1="0%" x2="100%" y2="100%">
-        
-        <stop offset="0%" stop-color="black" stop-opacity="0.2" ></stop>
-        
-        <stop offset="50%" stop-color="black" stop-opacity="0.1" ></stop>
-        
-        <stop offset="100%" stop-color="black" stop-opacity="0.2" ></stop>
-    </linearGradient>
-
-    
-<filter id="landing-gen-frostFilter" x="-100%" y="-100%" width="300%" height="300%" filterUnits="objectBoundingBox">        
-        
-        <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="shadowBlur"></feGaussianBlur>
-        <feOffset in="shadowBlur" dx="0" dy="6" result="shadowOffset"></feOffset>
-        <feFlood flood-color="black" flood-opacity="0.2" result="shadowColor"></feFlood>
-        <feComposite in="shadowColor" in2="shadowOffset" operator="in" result="dropShadow"></feComposite>
-
-        
-        
-        <feMorphology operator="erode" radius="1" in="SourceAlpha" result="eroded"></feMorphology>
-        <feComposite in="SourceAlpha" in2="eroded" operator="out" result="strokeMask"></feComposite>
-        
-        
-        <feFlood flood-color="#666" flood-opacity="0.5" result="strokeColor"></feFlood>
-        <feComposite in="strokeColor" in2="strokeMask" operator="in" result="rimLight"></feComposite>
-
-        
-        <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blurMap"></feGaussianBlur>
-        <feSpecularLighting in="blurMap" surfaceScale="2" specularConstant="0.6" specularExponent="10" lighting-color="white" result="specular">
-            <fePointLight x="-100" y="-100" z="300" ></fePointLight>
-        </feSpecularLighting>
-        <feComposite in="specular" in2="SourceAlpha" operator="in" result="specularSheen"></feComposite>
-
-        
-        <feMerge>
-            <feMergeNode in="dropShadow"></feMergeNode>    
-            <feMergeNode in="SourceGraphic"></feMergeNode> 
-            <feMergeNode in="specularSheen"></feMergeNode> 
-            <feMergeNode in="rimLight"></feMergeNode>      
-        </feMerge>
-    </filter>
-
-    <mask id="landing-gen-m2"><rect x="-1000" y="-1000" width="4000" height="4000" fill="white"></rect><path d="M 50 40 L 40 50" stroke="black" stroke-width="8" stroke-linecap="round"></path></mask>
-    <mask id="landing-gen-m3"><rect x="-1000" y="-1000" width="4000" height="4000" fill="white"></rect><path d="M 60 20 L 30 50" stroke="black" stroke-width="10" stroke-linecap="round"></path></mask>
-    <clipPath id="landing-gen-cp"><rect x="0" y="0" width="80" height="80" ></rect></clipPath>
-  </defs>
-
-  <g clip-path="url(#landing-gen-cp)">
-      
-      <path d="M 50 50 L 15 85" stroke="url(#landing-gen-frostBody)" stroke-width="6" stroke-linecap="round" mask="url(#landing-gen-m2)" filter="url(#landing-gen-frostFilter)" ></path>
-      
-      
-      <path d="M 50 40 L 40 50" stroke="url(#landing-gen-frostBody)" stroke-width="4" stroke-linecap="round" mask="url(#landing-gen-m3)" filter="url(#landing-gen-frostFilter)" ></path>
-      
-      
-      <path d="M 60 20 L 30 50" stroke="url(#landing-gen-frostBody)" stroke-width="6" stroke-linecap="round" filter="url(#landing-gen-frostFilter)" ></path>
-  </g>
-  
-  </g>
+<symbol id="marathon-light" data-name="Capa 1" viewBox="0 0 350.11 60.59"><defs><style>.cls-1{fill:#e6332c;}.cls-2{fill:#2f3433;}.cls-3{fill:#738087;}</style></defs><path class="cls-1" d="M31.44,45.51A160.24,160.24,0,0,0,21.32,67.07,29.21,29.21,0,0,1,5.89,50.81l1.18-3.12a158.4,158.4,0,0,1,8.56-18.11A156.41,156.41,0,0,1,31.44,45.51" transform="translate(-5.89 -6.48)"></path><path class="cls-1" d="M47.19,22.45a162.24,162.24,0,0,0-13,18.31A160.38,160.38,0,0,0,18.27,25,157.89,157.89,0,0,1,31.21,6.48a157.46,157.46,0,0,1,16,16" transform="translate(-5.89 -6.48)"></path><path class="cls-1" d="M63.39,45A162.26,162.26,0,0,0,50.58,63a162.5,162.5,0,0,0-12.8-18,155.15,155.15,0,0,1,12.8-18.44A154.43,154.43,0,0,1,63.39,45" transform="translate(-5.89 -6.48)"></path><path class="cls-1" d="M82.9,25A162.62,162.62,0,0,0,67,40.76,164,164,0,0,0,54,22.45a158.29,158.29,0,0,1,16-16A159.85,159.85,0,0,1,82.9,25" transform="translate(-5.89 -6.48)"></path><path class="cls-1" d="M95.28,50.8A29.14,29.14,0,0,1,79.86,67.07,163.14,163.14,0,0,0,69.73,45.5,159.66,159.66,0,0,1,85.55,29.57a155.77,155.77,0,0,1,8.53,18.09Z" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M317,32.82c0,3.12-2.48,4.93-6,4.93s-6-1.81-6-4.93V22.63c0-3.13,2.48-4.94,6-4.94s6,1.81,6,4.94Zm-6-21.94c-6.4,0-14.37,3.34-14.37,11.07V33.49c0,7.74,8,11.07,14.37,11.07s14.48-3.33,14.48-11.07V22c0-7.73-8.08-11.07-14.48-11.07" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M140.64,12h-5a2.35,2.35,0,0,0-2.36,1.62L126,25.34l-7.19-11.76c-.43-.57-.64-1.62-2.42-1.62h-5.2c-1.22,0-1.53.53-1.53,1.38V42.05c0,1.1.58,1.38,1.53,1.38h5.2c.94,0,1.51-.28,1.51-1.38V25.86l5.32,8.36a1.81,1.81,0,0,0,1.47,1h2.62a1.93,1.93,0,0,0,1.53-1l5.25-8.36V42.05c0,1.1.57,1.38,1.52,1.38h5c.94,0,1.52-.28,1.52-1.38V13.34c0-.85-.31-1.38-1.52-1.38" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M156.29,31.54,160.23,21l3.94,10.55ZM176.52,42.1,164.9,13.49A2.11,2.11,0,0,0,162.75,12h-5a2.08,2.08,0,0,0-2.16,1.49L143.89,42.1c-.27.58-.27,1.33.89,1.33h5.52c1.16,0,1.58-.28,2-1.43l1.47-3.76h12.87L168.11,42c.42,1.15.84,1.43,2,1.43h5.51c1.15,0,1.15-.75.9-1.33" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M206.34,41.9l-7.41-9.78c3.25-1,7.3-4.49,7.3-9.51a9.87,9.87,0,0,0-3-7.5c-2.2-2-4.72-3-10.44-3H179.5c-1.21,0-1.47.52-1.47,1.38V42.05c0,1.1.51,1.38,1.47,1.38h5.19c.95,0,1.53-.28,1.53-1.38V18.74h7c2.73,0,4.83,1.58,4.83,4.06,0,2.25-2.42,3.87-5,3.87H192c-1.21,0-1.53.53-1.53,1.38v3.83a3.32,3.32,0,0,0,.58,2.44L196.73,42a2.83,2.83,0,0,0,2.62,1.43h6.2a.91.91,0,0,0,.79-1.53" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M220.91,31.54,224.85,21l3.94,10.55ZM241.13,42.1,229.52,13.49A2.11,2.11,0,0,0,227.37,12h-5a2.08,2.08,0,0,0-2.16,1.49L208.51,42.1c-.27.58-.27,1.33.89,1.33h5.52c1.15,0,1.57-.28,2-1.43l1.47-3.76h12.87L232.73,42c.41,1.15.84,1.43,2,1.43h5.51c1.16,0,1.16-.75.9-1.33" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M261.94,12H237.57c-1.22,0-1.53.54-1.53,1.39v4c0,.86.31,1.38,1.53,1.38h8.08V42.05c0,1.1.59,1.38,1.53,1.38h5.2c1,0,1.53-.28,1.53-1.38V18.74h8c1.22,0,1.53-.52,1.53-1.38v-4c0-.85-.31-1.39-1.53-1.39" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M292.41,12h-5.2c-.95,0-1.51.29-1.51,1.39v10.8H274V13.39c0-1.1-.53-1.39-1.52-1.39h-5.2c-.94,0-1.53.29-1.53,1.39V42.05c0,1.1.59,1.38,1.53,1.38h5.2c1,0,1.52-.28,1.52-1.38V31.26H285.7V42.05c0,1.1.56,1.38,1.51,1.38h5.2c.95,0,1.53-.28,1.53-1.38V13.39c0-1.1-.58-1.39-1.53-1.39" transform="translate(-5.89 -6.48)"></path><path class="cls-2" d="M354.25,12h-5c-.95,0-1.52.29-1.52,1.39V30L336.55,13.63c-.68-1-1.05-1.63-2.37-1.63h-4.94c-1.2,0-1.52.54-1.52,1.39V42.05c0,1.1.58,1.38,1.52,1.38h5.21c.94,0,1.52-.28,1.52-1.38V25.43l11.14,16.38c.67.95,1.05,1.62,2.36,1.62h4.78c1.21,0,1.53-.52,1.53-1.38V13.39c0-1.1-.57-1.39-1.53-1.39" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M116.35,57.66a2.4,2.4,0,0,1-.66,1.8,2.56,2.56,0,0,1-1.87.65,2.25,2.25,0,0,1-1.92-1,4,4,0,0,1-.73-2.44V54.78a3.94,3.94,0,0,1,.73-2.43,2.26,2.26,0,0,1,1.92-1,2.56,2.56,0,0,1,1.87.65,2.39,2.39,0,0,1,.66,1.77h1.39v0a3.24,3.24,0,0,0-1-2.56,4.19,4.19,0,0,0-2.89-1,3.76,3.76,0,0,0-2.95,1.3,4.75,4.75,0,0,0-1.14,3.26v1.9A4.74,4.74,0,0,0,110.87,60a3.77,3.77,0,0,0,2.95,1.27,4,4,0,0,0,2.87-1,3.21,3.21,0,0,0,1.06-2.52v0Z" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M129.33,56.7a3.66,3.66,0,0,1-.78,2.42,2.67,2.67,0,0,1-2.14.94,2.46,2.46,0,0,1-2-.94,3.78,3.78,0,0,1-.75-2.42V54.78a3.8,3.8,0,0,1,.75-2.42,2.45,2.45,0,0,1,2-.93,2.66,2.66,0,0,1,2.13.93,3.65,3.65,0,0,1,.79,2.42Zm.24-5.16a4.17,4.17,0,0,0-3.16-1.31,3.94,3.94,0,0,0-3,1.31,4.71,4.71,0,0,0-1.18,3.25V56.7a4.65,4.65,0,0,0,1.18,3.24,3.89,3.89,0,0,0,3,1.29,4.12,4.12,0,0,0,3.16-1.29,4.58,4.58,0,0,0,1.21-3.24V54.79a4.6,4.6,0,0,0-1.21-3.25" transform="translate(-5.89 -6.48)"></path><polygon class="cls-3" points="136.6 43.91 136.6 52.06 136.55 52.08 131.41 43.91 129.97 43.91 129.97 54.61 131.41 54.61 131.41 46.47 131.46 46.44 136.6 54.61 138.04 54.61 138.04 43.91 136.6 43.91"></polygon><polygon class="cls-3" points="144.98 53.48 144.98 49.65 149.37 49.65 149.37 48.51 144.98 48.51 144.98 45.05 150.04 45.05 150.04 43.91 143.53 43.91 143.53 54.61 150.12 54.61 150.12 53.48 144.98 53.48"></polygon><path class="cls-3" d="M167,57.66a2.37,2.37,0,0,1-.67,1.8,2.55,2.55,0,0,1-1.86.65,2.29,2.29,0,0,1-1.93-1,4,4,0,0,1-.71-2.44V54.78a4,4,0,0,1,.71-2.43,2.31,2.31,0,0,1,1.93-1,2.55,2.55,0,0,1,1.86.65A2.36,2.36,0,0,1,167,53.8h1.38l0,0a3.18,3.18,0,0,0-1.05-2.56,4.13,4.13,0,0,0-2.88-1,3.77,3.77,0,0,0-3,1.3,4.75,4.75,0,0,0-1.15,3.26v1.9A4.74,4.74,0,0,0,161.48,60a3.78,3.78,0,0,0,3,1.27,4,4,0,0,0,2.87-1,3.18,3.18,0,0,0,1.06-2.52l0,0Z" transform="translate(-5.89 -6.48)"></path><polygon class="cls-3" points="166.16 43.91 166.16 45.05 169.63 45.05 169.63 54.61 171.07 54.61 171.07 45.05 174.6 45.05 174.6 43.91 166.16 43.91"></polygon><path class="cls-3" d="M186.34,57.13l1.59-4.6h0l1.56,4.6Zm2.24-6.74h-1.24l-3.86,10.7H185l.95-2.76h4l1,2.76h1.46Z" transform="translate(-5.89 -6.48)"></path><polygon class="cls-3" points="199.78 43.91 196.38 52.6 196.32 52.6 192.92 43.91 191.03 43.91 191.03 54.61 192.47 54.61 192.47 46.32 192.51 46.32 195.85 54.61 196.85 54.61 200.09 46.6 200.14 46.6 200.14 54.61 201.57 54.61 201.57 43.91 199.78 43.91"></polygon><path class="cls-3" d="M219.68,56.7a3.66,3.66,0,0,1-.78,2.42,2.69,2.69,0,0,1-2.14.94,2.46,2.46,0,0,1-2-.94A3.72,3.72,0,0,1,214,56.7V54.78a3.74,3.74,0,0,1,.75-2.42,2.45,2.45,0,0,1,2-.93,2.66,2.66,0,0,1,2.13.93,3.65,3.65,0,0,1,.79,2.42Zm.24-5.16a4.18,4.18,0,0,0-3.16-1.31,3.92,3.92,0,0,0-3,1.31,4.7,4.7,0,0,0-1.17,3.25V56.7a4.64,4.64,0,0,0,1.17,3.24,3.88,3.88,0,0,0,3,1.29,4.13,4.13,0,0,0,3.16-1.29,4.58,4.58,0,0,0,1.21-3.24V54.79a4.6,4.6,0,0,0-1.21-3.25" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M232.5,56.37A5.27,5.27,0,0,0,230,55.14a5.86,5.86,0,0,1-1.92-.83,1.39,1.39,0,0,1-.59-1.15,1.65,1.65,0,0,1,.54-1.29,2.25,2.25,0,0,1,1.56-.49,2.35,2.35,0,0,1,1.63.59,2,2,0,0,1,.62,1.51h1.39l0,0a2.94,2.94,0,0,0-1-2.23,3.71,3.71,0,0,0-2.69-1,3.8,3.8,0,0,0-2.56.85,2.67,2.67,0,0,0-1,2.09,2.55,2.55,0,0,0,.92,2,6.13,6.13,0,0,0,2.54,1.18,4.44,4.44,0,0,1,1.85.84,1.62,1.62,0,0,1,.51,1.22,1.48,1.48,0,0,1-.6,1.25,2.5,2.5,0,0,1-1.62.47,2.88,2.88,0,0,1-1.73-.55,1.81,1.81,0,0,1-.76-1.54h-1.38l0,0a2.64,2.64,0,0,0,1.15,2.31,4.47,4.47,0,0,0,2.74.86,4.22,4.22,0,0,0,2.66-.78,2.51,2.51,0,0,0,1-2.07,2.69,2.69,0,0,0-.85-2" transform="translate(-5.89 -6.48)"></path><rect class="cls-3" x="239.37" y="43.92" width="1.45" height="10.69"></rect><polygon class="cls-3" points="253.1 43.91 253.1 52.06 253.05 52.08 247.91 43.91 246.47 43.91 246.47 54.61 247.91 54.61 247.91 46.47 247.95 46.44 253.1 54.61 254.54 54.61 254.54 43.91 253.1 43.91"></polygon><path class="cls-3" d="M272.48,56.48a3.68,3.68,0,0,1-.85,2.5,3,3,0,0,1-2.33,1h-1.93V51.53h1.93a3,3,0,0,1,2.33,1,3.64,3.64,0,0,1,.85,2.49Zm.18-4.8a4.53,4.53,0,0,0-3.36-1.29h-3.37v10.7h3.37a4.39,4.39,0,0,0,4.63-4.61V55a4.53,4.53,0,0,0-1.27-3.33" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M285.54,50.39v7.1a2.55,2.55,0,0,1-.74,1.93,2.71,2.71,0,0,1-1.91.69,2.51,2.51,0,0,1-1.81-.69,2.64,2.64,0,0,1-.7-1.93v-7.1h-1.45v7.1A3.49,3.49,0,0,0,280,60.24a4.06,4.06,0,0,0,2.85,1,4.28,4.28,0,0,0,2.95-1A3.45,3.45,0,0,0,287,57.49v-7.1Z" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M298.56,56.37a5.27,5.27,0,0,0-2.46-1.23,5.69,5.69,0,0,1-1.91-.83,1.4,1.4,0,0,1-.6-1.15,1.65,1.65,0,0,1,.54-1.29,2.24,2.24,0,0,1,1.55-.49,2.34,2.34,0,0,1,1.64.59,2,2,0,0,1,.63,1.51h1.38l0,0a2.9,2.9,0,0,0-1-2.23,3.7,3.7,0,0,0-2.7-1,3.76,3.76,0,0,0-2.54.85,2.64,2.64,0,0,0-1,2.09,2.54,2.54,0,0,0,.91,2,6.25,6.25,0,0,0,2.54,1.18,4.44,4.44,0,0,1,1.85.84,1.62,1.62,0,0,1,.51,1.22,1.5,1.5,0,0,1-.59,1.25,2.55,2.55,0,0,1-1.63.47,2.88,2.88,0,0,1-1.73-.55,1.81,1.81,0,0,1-.76-1.54h-1.38v0A2.59,2.59,0,0,0,293,60.37a4.46,4.46,0,0,0,2.73.86,4.13,4.13,0,0,0,2.64-.78,2.47,2.47,0,0,0,1-2.07,2.65,2.65,0,0,0-.85-2" transform="translate(-5.89 -6.48)"></path><polygon class="cls-3" points="297.58 43.91 297.58 45.05 301.06 45.05 301.06 54.61 302.5 54.61 302.5 45.05 306.03 45.05 306.03 43.91 297.58 43.91"></polygon><path class="cls-3" d="M319.94,55.31h-2.07V51.53h2.22a2.27,2.27,0,0,1,1.63.5,1.8,1.8,0,0,1,.52,1.4,1.74,1.74,0,0,1-.54,1.42,2.69,2.69,0,0,1-1.76.46m3.83,4.95a3.94,3.94,0,0,1-.11-.89v-1a3.09,3.09,0,0,0-.38-1.59,2.22,2.22,0,0,0-1.27-.92,2.78,2.78,0,0,0,1.25-1,2.37,2.37,0,0,0,.42-1.43,2.77,2.77,0,0,0-.92-2.25,4,4,0,0,0-2.67-.79h-3.66V61.08h1.44V56.45h2.48a1.74,1.74,0,0,1,1.35.54,1.85,1.85,0,0,1,.51,1.39v1a5.47,5.47,0,0,0,.09,1,1.09,1.09,0,0,0,.37.73h1.49v-.17Z" transform="translate(-5.89 -6.48)"></path><rect class="cls-3" x="323.24" y="43.92" width="1.45" height="10.69"></rect><path class="cls-3" d="M338.28,57.13l1.59-4.6h0l1.57,4.6Zm2.24-6.74h-1.24l-3.85,10.7h1.48l.95-2.76h4l.94,2.76h1.48Z" transform="translate(-5.89 -6.48)"></path><path class="cls-3" d="M355.16,56.37a5.37,5.37,0,0,0-2.46-1.23,5.93,5.93,0,0,1-1.93-.83,1.41,1.41,0,0,1-.58-1.15,1.65,1.65,0,0,1,.54-1.29,2.18,2.18,0,0,1,1.54-.49,2.31,2.31,0,0,1,1.63.59,2,2,0,0,1,.64,1.51h1.38l0,0a2.87,2.87,0,0,0-1-2.23,4.21,4.21,0,0,0-5.24-.13,2.64,2.64,0,0,0-1,2.09,2.51,2.51,0,0,0,.91,2,6.24,6.24,0,0,0,2.55,1.18,4.28,4.28,0,0,1,1.83.84,1.63,1.63,0,0,1,.52,1.22,1.48,1.48,0,0,1-.6,1.25,2.53,2.53,0,0,1-1.63.47,2.87,2.87,0,0,1-1.72-.55,1.78,1.78,0,0,1-.75-1.54h-1.4v0a2.65,2.65,0,0,0,1.16,2.31,4.43,4.43,0,0,0,2.72.86,4.19,4.19,0,0,0,2.66-.78,2.46,2.46,0,0,0,1-2.07,2.72,2.72,0,0,0-.84-2" transform="translate(-5.89 -6.48)"></path></symbol>
+<symbol xml:space="preserve" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 48.7 33.01" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" id="marathon-light-logo">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <path class="fil0" d="M13.92 21.27c-2.13,3.77 -3.98,7.72 -5.52,11.75 -3.85,-1.71 -6.89,-4.91 -8.4,-8.86l0.64 -1.7c1.34,-3.38 2.91,-6.69 4.66,-9.87 3.08,2.68 5.97,5.6 8.62,8.68z"></path>
+  <path class="fil0" d="M22.5 8.7c-2.57,3.14 -4.94,6.5 -7.06,9.98 -2.7,-3.07 -5.62,-5.96 -8.69,-8.59 2.07,-3.48 4.45,-6.86 7.05,-10.08 3.1,2.68 6.02,5.61 8.7,8.7z"></path>
+  <path class="fil0" d="M31.33 20.96c-2.53,3.09 -4.88,6.38 -6.98,9.81 -2.11,-3.44 -4.46,-6.73 -6.98,-9.81 2.07,-3.49 4.42,-6.87 6.98,-10.04 2.56,3.16 4.9,6.54 6.98,10.05z"></path>
+  <path class="fil0" d="M41.96 10.08c-3.08,2.65 -6,5.54 -8.68,8.6 -2.12,-3.48 -4.49,-6.83 -7.06,-9.98 2.65,-3.07 5.57,-5.99 8.7,-8.7 2.59,3.19 4.96,6.58 7.05,10.08z"></path>
+  <path class="fil0" d="M48.7 24.15c-1.5,3.95 -4.54,7.15 -8.4,8.87 -1.55,-4.05 -3.4,-8 -5.52,-11.75 2.66,-3.09 5.55,-6 8.62,-8.68 1.77,3.2 3.33,6.51 4.65,9.85l0.65 1.71z"></path>
+ </g>
 </symbol>
-<symbol viewBox="0 0 80 80" fill="none" id="marathon-dark">
-  
-  <g>
-      
-  <defs>
-    
-    <linearGradient id="landing-gen-frostBody" x1="0%" y1="0%" x2="100%" y2="100%">
-        
-        <stop offset="0%" stop-color="white" stop-opacity="0.35" ></stop>
-        
-        <stop offset="50%" stop-color="white" stop-opacity="0.15" ></stop>
-        
-        <stop offset="100%" stop-color="white" stop-opacity="0.3" ></stop>
-    </linearGradient>
-
-    
-<filter id="landing-gen-frostFilter" x="-100%" y="-100%" width="300%" height="300%" filterUnits="objectBoundingBox">        
-        
-        <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="shadowBlur"></feGaussianBlur>
-        <feOffset in="shadowBlur" dx="0" dy="6" result="shadowOffset"></feOffset>
-        <feFlood flood-color="black" flood-opacity="0.2" result="shadowColor"></feFlood>
-        <feComposite in="shadowColor" in2="shadowOffset" operator="in" result="dropShadow"></feComposite>
-
-        
-        
-        <feMorphology operator="erode" radius="1" in="SourceAlpha" result="eroded"></feMorphology>
-        <feComposite in="SourceAlpha" in2="eroded" operator="out" result="strokeMask"></feComposite>
-        
-        
-        <feFlood flood-color="white" flood-opacity="0.8" result="strokeColor"></feFlood>
-        <feComposite in="strokeColor" in2="strokeMask" operator="in" result="rimLight"></feComposite>
-
-        
-        <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blurMap"></feGaussianBlur>
-        <feSpecularLighting in="blurMap" surfaceScale="2" specularConstant="0.6" specularExponent="10" lighting-color="white" result="specular">
-            <fePointLight x="-100" y="-100" z="300" ></fePointLight>
-        </feSpecularLighting>
-        <feComposite in="specular" in2="SourceAlpha" operator="in" result="specularSheen"></feComposite>
-
-        
-        <feMerge>
-            <feMergeNode in="dropShadow"></feMergeNode>    
-            <feMergeNode in="SourceGraphic"></feMergeNode> 
-            <feMergeNode in="specularSheen"></feMergeNode> 
-            <feMergeNode in="rimLight"></feMergeNode>      
-        </feMerge>
-    </filter>
-
-    <mask id="landing-gen-m2"><rect x="-1000" y="-1000" width="4000" height="4000" fill="white"></rect><path d="M 50 40 L 40 50" stroke="black" stroke-width="8" stroke-linecap="round"></path></mask>
-    <mask id="landing-gen-m3"><rect x="-1000" y="-1000" width="4000" height="4000" fill="white"></rect><path d="M 60 20 L 30 50" stroke="black" stroke-width="10" stroke-linecap="round"></path></mask>
-    <clipPath id="landing-gen-cp"><rect x="0" y="0" width="80" height="80" ></rect></clipPath>
-  </defs>
-
-  <g clip-path="url(#landing-gen-cp)">
-      
-      <path d="M 50 50 L 15 85" stroke="url(#landing-gen-frostBody)" stroke-width="6" stroke-linecap="round" mask="url(#landing-gen-m2)" filter="url(#landing-gen-frostFilter)" ></path>
-      
-      
-      <path d="M 50 40 L 40 50" stroke="url(#landing-gen-frostBody)" stroke-width="4" stroke-linecap="round" mask="url(#landing-gen-m3)" filter="url(#landing-gen-frostFilter)" ></path>
-      
-      
-      <path d="M 60 20 L 30 50" stroke="url(#landing-gen-frostBody)" stroke-width="6" stroke-linecap="round" filter="url(#landing-gen-frostFilter)" ></path>
-  </g>
-  
-  </g>
+<symbol viewBox="0 0 24 24" id="map-pin"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></g></symbol>
+<symbol viewBox="0 0 24 24" id="mail"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect width="20" height="16" x="2" y="4" rx="2"></rect></g></symbol>
+<symbol viewBox="0 0 2550 2550" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" id="logo">
+    <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+        <path d="M177.045,348.944C151.094,394.986 128.606,442.894 109.768,492.273C62.56,471.318 25.647,432.417 7.191,384.178L15.035,363.436C31.446,322.145 50.451,281.934 71.94,243.043C109.467,275.781 144.592,311.172 177.045,348.944Z" style="fill:rgb(224,39,38);fill-rule:nonzero;"></path>
+        <path d="M281.749,195.643C250.164,234.174 221.288,274.844 195.326,317.366C162.533,280.02 127.169,245.009 89.492,212.595C115.19,169.555 143.938,128.41 175.517,89.476C213.475,122.336 249.024,157.883 281.882,195.844" style="fill:rgb(224,39,38);fill-rule:nonzero;"></path>
+        <path d="M389.445,345.554C358.373,383.461 329.921,423.44 304.285,465.216C278.668,423.444 250.238,383.465 219.193,345.554C244.56,302.69 272.999,261.72 304.285,222.967C335.609,261.709 364.071,302.679 389.445,345.554Z" style="fill:rgb(224,39,38);fill-rule:nonzero;"></path>
+        <path d="M519.146,233.733C481.548,266.188 446.231,301.194 413.445,338.504C387.452,296.003 358.575,255.333 327.022,216.782C359.895,178.834 395.44,143.287 433.387,110.414C464.846,149.447 493.504,190.655 519.146,233.733Z" style="fill:rgb(224,39,38);fill-rule:nonzero;"></path>
+        <path d="M604.073,405.442C585.692,453.722 548.787,492.66 501.563,513.603C482.641,464.228 460.132,416.302 434.219,370.208C466.748,332.484 501.89,297.095 539.389,264.307C560.847,303.137 579.789,343.307 596.096,384.568L604.073,405.442Z" style="fill:rgb(224,39,38);fill-rule:nonzero;"></path>
+    </g>
 </symbol>
 <symbol viewBox="0 0 24 24" id="log-out"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 17l5-5l-5-5m5 5H9m0 9H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></symbol>
+<symbol viewBox="0 0 24 24" id="linkedin"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></g></symbol>
 <symbol viewBox="0 0 24 24" id="layout-grid"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></g></symbol>
 <symbol viewBox="0 0 24 24" id="layout-dashboard"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></g></symbol>
 <symbol viewBox="0 0 24 24" id="layers"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="laptop"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2zm2.054 10.987H3.946"></path></symbol>
+<symbol viewBox="0 0 24 24" id="instagram"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="info"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4m0-4h.01"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="house"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="handshake"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m11 17l2 2a1 1 0 1 0 3-3"></path><path d="m14 14l2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3l1 11h-2M3 3L2 14l6.5 6.5a1 1 0 1 0 3-3M3 4h8"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="globe"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"></path></g></symbol>
 <symbol viewBox="0 0 24 24" id="git-branch"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></g></symbol>
 <symbol viewBox="0 0 24 24" id="factory"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"></path></symbol>
+<symbol viewBox="0 0 24 24" id="facebook"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="contact"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 2v2M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M8 2v2"></path><circle cx="12" cy="11" r="3"></circle><rect width="18" height="18" x="3" y="4" rx="2"></rect></g></symbol>
 <symbol viewBox="0 0 24 24" id="code"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 18l6-6l-6-6M8 6l-6 6l6 6"></path></symbol>
 <symbol viewBox="0 0 24 24" id="cloud-moon-rain"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 20v2m7.376-7.488a6 6 0 0 0 3.461-4.127c.148-.625-.659-.97-1.248-.714a4 4 0 0 1-5.259-5.26c.255-.589-.09-1.395-.716-1.248a6 6 0 0 0-4.594 5.36M3 20a5 5 0 1 1 8.9-4H13a3 3 0 0 1 2 5.24M7 19v2"></path></symbol>
@@ -171,5 +77,59 @@
 <symbol viewBox="0 0 24 24" id="book-open"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"></path></symbol>
 <symbol viewBox="0 0 24 24" id="arrow-right"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></symbol>
 <symbol viewBox="0 0 24 24" id="arrow-left"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 19l-7-7l7-7m7 7H5"></path></symbol>
+<symbol xml:space="preserve" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 5148.77 4745.72" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" id="404-not-found">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:10.63;stroke-miterlimit:22.9256}
+    .str4 {stroke:#101010;stroke-width:10.63;stroke-miterlimit:22.9256}
+    .str3 {stroke:#818181;stroke-width:10.63;stroke-miterlimit:22.9256}
+    .str2 {stroke:#999A95;stroke-width:10.63;stroke-miterlimit:22.9256}
+    .str1 {stroke:#9B9B9B;stroke-width:10.63;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil7 {fill:#101010}
+    .fil8 {fill:#818181}
+    .fil9 {fill:#818181}
+    .fil4 {fill:#878787}
+    .fil1 {fill:#E0E0E0}
+    .fil5 {fill:#ECECEC}
+    .fil3 {fill:#F4F4F4}
+    .fil6 {fill:white}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <path class="fil0" d="M4242.31 4728.27l-3348.29 0 0.71 -56.28 0 -3277.78 650.12 -982.33 -2.8 -270.27c10.71,-92.92 59.62,-141.15 153.95,-141.61l877.18 0.83 877.18 -0.83c94.33,0.46 143.24,48.69 153.95,141.61l-2.8 270.27 641.34 991.09 0 3305.59 -0.53 19.71z"></path>
+  <rect class="fil1" x="-0" y="4677.61" width="5148.77" height="68.11" rx="30.95" ry="34.05"></rect>
+  <rect class="fil1" x="146.3" y="3234.26" width="123.8" height="61.9" rx="0.74" ry="30.95"></rect>
+  <rect class="fil1" x="360.13" y="3234.26" width="590.85" height="61.9" rx="3.55" ry="30.95"></rect>
+  <rect class="fil1" x="4574.8" y="2851.63" width="455.8" height="61.9" rx="2.74" ry="30.95"></rect>
+  <rect class="fil1" x="4197.79" y="2148.24" width="950.98" height="61.9" rx="5.72" ry="30.95"></rect>
+  <rect class="fil2 str0" x="1198.59" y="2193.26" width="1479.92" height="1592.46"></rect>
+  <rect class="fil3 str1" x="1172.44" y="2165.12" width="1532.22" height="1648.74"></rect>
+  <path class="fil4" d="M4242.31 4728.27l-3348.29 0 0.71 -56.28 0 -3277.78 650.12 -982.33 -2.8 -270.27c10.71,-92.92 59.62,-141.15 153.95,-141.61l877.18 0.83 877.18 -0.83c94.33,0.46 143.24,48.69 153.95,141.61l-2.8 270.27 641.34 991.09 0 3305.59 -0.53 19.71zm-3285.68 -56.28l3224.31 0 0 -3265.16 -633.44 -975.64 4.91 -269.66c-4.4,-72.43 -35.28,-107.67 -92.23,-105.08l-887 -0.63 -887 0.63c-56.95,-2.59 -87.83,32.65 -92.23,105.08l4.91 269.66 -642.22 977.32 0 3263.48z"></path>
+  <line class="fil2 str2" x1="2928.29" y1="4664.97" x2="2928.29" y2= "1406.89" ></line>
+  <line class="fil2 str2" x1="956.69" y1="1406.89" x2="4187.35" y2= "1404.78" ></line>
+  <polygon class="fil5" points="3541.63,422.14 3299.67,807.6 4146.55,1359.05 "></polygon>
+  <rect class="fil5" x="1195.17" y="4020.67" width="1485.55" height="109.73" rx="19.69" ry="19.69"></rect>
+  <rect class="fil5" x="1195.17" y="4245.75" width="776.54" height="109.73" rx="10.29" ry="19.69"></rect>
+  <polygon class="fil6 str3" points="1380.87,3784.33 2492.21,3784.33 2492.21,2487.29 1611.57,2487.29 1605.95,2712.37 1380.87,2712.38 "></polygon>
+  <polygon class="fil2 str3" points="1605.6,2712.03 1380.97,2712 1381.04,2704.37 1606.11,2487.32 1611.23,2487.28 "></polygon>
+  <circle class="fil7" cx="1741.01" cy="2843.2" r="28.13"></circle>
+  <circle class="fil7" cx="2127.88" cy="2843.2" r="28.13"></circle>
+  <rect class="fil2 str3" x="2049.1" y="3349.64" width="66.12" height="339.03"></rect>
+  <rect class="fil2 str3" x="2158.83" y="3230.06" width="66.12" height="458.61"></rect>
+  <rect class="fil2 str3" x="2275.59" y="3277.9" width="66.12" height="410.77"></rect>
+  <rect class="fil8" x="1997.05" y="3683.05" width="374.2" height="15.47" rx="7.74" ry="7.74"></rect>
+  <rect class="fil9" x="1548.29" y="3664.76" width="343.25" height="15.47" rx="7.1" ry="7.74"></rect>
+  <rect class="fil9" x="1548.29" y="3550.81" width="343.25" height="15.47" rx="7.1" ry="7.74"></rect>
+  <rect class="fil9" x="1548.29" y="3436.86" width="343.25" height="15.47" rx="7.1" ry="7.74"></rect>
+  <rect class="fil9" x="1548.29" y="3324.32" width="343.25" height="15.47" rx="7.1" ry="7.74"></rect>
+  <polyline class="fil2 str2" points="2925.47,1404.07 3541.63,427.77 1600.29,430.58 "></polyline>
+  <path class="fil7 str4" d="M1937.54 2936.3c-37.63,-3.03 -75.96,4.71 -100.36,32.68 -19.56,22.44 12.65,-2.1 35.64,-7.52 50.09,-11.81 99.72,-7.22 144.38,16.37 25.15,13.29 12.83,-3.81 -10.44,-19.2 -22.44,-14.84 -42.51,-20.17 -69.23,-22.32z"></path>
+ </g>
+</symbol>
 </defs>
 </svg>

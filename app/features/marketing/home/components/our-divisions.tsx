@@ -24,7 +24,7 @@ export function OurDivisions() {
 	const themeColor = activeTab === 'electrica' ? '#ef4444' : '#1d70b3'
 
 	return (
-		<section className="py-32 w-full bg-white relative overflow-hidden">
+		<section id="divisiones" className="py-16 md:py-32 w-full bg-white relative overflow-hidden">
 			{/* Patrón de fondo sutil */}
 			<div className="absolute inset-0 opacity-[0.02] pointer-events-none"
 				style={{ backgroundImage: 'radial-gradient(#1e293b 1px, transparent 1px)', backgroundSize: '40px 40px' }}
@@ -32,7 +32,7 @@ export function OurDivisions() {
 
 			<div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
 				{/* ENCABEZADO */}
-				<div className="text-center mb-14">
+				<div className="text-center mb-8 md:mb-14">
 					<motion.div
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
@@ -61,7 +61,7 @@ export function OurDivisions() {
 				</div>
 
 				{/* SELECTOR DE PESTAÑAS */}
-				<div className="flex justify-center mb-12">
+				<div className="flex justify-center mb-8 md:mb-12">
 					<div className="inline-flex p-1.5 bg-slate-50 border border-slate-200 rounded-2xl shadow-inner relative">
 						{DIVISIONS_DATA.categories.map((category) => (
 							<button
@@ -113,7 +113,7 @@ export function OurDivisions() {
 										return (
 											<CarouselItem key={`${index}-${item.title}`} className="pl-6 basis-full sm:basis-1/2 lg:basis-1/4">
 												<motion.div
-													className="group/card relative aspect-[3/4] overflow-hidden rounded-[32px] bg-white border border-slate-100 flex flex-col justify-between p-10 transition-all duration-500 ease-out hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.06)] hover:border-slate-200"
+													className="group/card relative h-[300px] sm:h-[340px] md:h-auto md:aspect-[3/4] overflow-hidden rounded-[32px] bg-white border border-slate-100 flex flex-col justify-between p-6 md:p-10 transition-all duration-500 ease-out hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.06)] hover:border-slate-200"
 												>
 													{/* Fondo vibrante dinámico en hover (ahora usando el color del tema) */}
 													<div
@@ -137,7 +137,7 @@ export function OurDivisions() {
 															<img
 																src={item.icon}
 																alt={item.title}
-																className="w-32 h-auto object-contain transition-all duration-700 group-hover/card:scale-105"
+																className="w-24 md:w-32 h-auto object-contain transition-all duration-700 group-hover/card:scale-105"
 																onError={(e) => {
 																	e.currentTarget.src = `https://placehold.co/150x150/f8fafc/1e293b?text=${item.title}`
 																}}
@@ -151,7 +151,7 @@ export function OurDivisions() {
 
 													{/* Footer de la Card */}
 													<div className="relative z-10 w-full flex flex-col items-center mt-auto pt-4">
-														<h3 className="text-center text-slate-700 font-black text-lg leading-tight uppercase tracking-wider mb-6 group-hover/card:text-slate-900 transition-colors duration-500">
+														<h3 className="text-center text-slate-700 font-black text-lg leading-tight uppercase tracking-wider mb-4 md:mb-6 group-hover/card:text-slate-900 transition-colors duration-500">
 															{item.title}
 														</h3>
 
@@ -184,7 +184,7 @@ export function OurDivisions() {
 								</div>
 
 								{/* Mobile controls (below) */}
-								<div className="flex justify-center mt-12 gap-4 lg:hidden">
+								<div className="flex justify-center mt-8 md:mt-12 gap-4 lg:hidden">
 									<CarouselPrevious className="relative translate-y-0 left-0 h-14 w-14 border border-slate-100 bg-white shadow-md text-slate-400" />
 									<CarouselNext className="relative translate-y-0 right-0 h-14 w-14 border border-slate-100 bg-white shadow-md text-slate-400" />
 								</div>
