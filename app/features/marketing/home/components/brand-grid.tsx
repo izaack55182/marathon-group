@@ -91,7 +91,7 @@ export function BrandGrid() {
                                     {/* Next Brand (enters from below) */}
                                     <div className="flex shrink-0 items-center justify-center w-full h-full">
                                         <img
-                                            src={`/images/aliance-commercial/${nextBrand}.png`}
+                                            src={`/images/aliance-commercial/${nextBrand}.webp`}
                                             alt={nextBrand}
                                             className="h-20 md:h-30 w-auto object-contain transition-transform hover:scale-105 duration-300"
                                             onError={(e) => {

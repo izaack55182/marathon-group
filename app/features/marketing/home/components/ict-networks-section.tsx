@@ -44,7 +44,7 @@ function BrandCarousel({ categoryId }: { categoryId: string }) {
 						<CarouselItem key={`${brand}-${i}`} className="pl-6 basis-full sm:basis-1/2 lg:basis-1/3">
 							<div className="h-32 flex items-center justify-center bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
 								<img
-									src={`/images/${brandsData.folder}/${brand}.png`}
+									src={`/images/${brandsData.folder}/${brand}.webp`}
 									alt={brand}
 									className="max-h-full max-w-full object-contain scale-160"
 									onError={(e) => {

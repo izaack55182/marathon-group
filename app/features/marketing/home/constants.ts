@@ -279,7 +279,7 @@ export const ELECTRICA_CATEGORIES = [
 		label: 'Automatización y control',
 		icon: Cpu,
 		description: 'Distribuimos una amplia gama de equipos electrónicos para los procesos de automatización y control de líneas de producción industrial.',
-		image: '/images/electrical-division/automatization-control.jpg',
+		image: '/images/electrical-division/automatization-control.webp',
 		sections: [
 			{
 				title: 'Sistemas de Control',
