@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "bun react-router dev",
 		"build": "react-router build",
-		"build:cloudflare": "react-router build",
+		"build:cloudflare": "react-router build && echo {} > build/client/wrangler.json",
 		"start": "wrangler pages dev ./build/client",
 		"typecheck": "react-router typegen && tsc",
 		"preview": "bun run build && wrangler pages dev ./build/client",
