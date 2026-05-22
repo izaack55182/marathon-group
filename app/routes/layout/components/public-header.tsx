@@ -144,7 +144,7 @@ export function Header() {
 							<Link to="#" className={cn(navigationMenuTriggerStyle(), 'bg-transparent text-base font-semibold hover:bg-accent/50')}>
 								Contacto
 							</Link>
-							<Link to="/#" className={buttonVariants({ variant: 'ghost', size: 'default' })}>
+							<Link to="/#" className={cn(buttonVariants({ variant: 'ghost', size: 'default' }), 'bg-transparent text-base font-semibold hover:bg-accent/50')}>
 								Iniciar sesión
 							</Link>
 						</div>
