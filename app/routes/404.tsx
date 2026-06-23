@@ -25,7 +25,7 @@ export default function NotFound() {
 				<div className="relative mb-8 group">
 					<div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
 					<div className="relative bg-white/40 backdrop-blur-xl border border-white/40 rounded-3xl p-8 md:p-12 shadow-2xl scale-95 md:scale-100 transition-all duration-500 hover:shadow-red-500/10">
-						<Icon name="404-not-found" className="w-64 h-64 md:w-80 md:h-80 drop-shadow-2xl" />
+					<Icon name="404-not-found" raw className="w-64 h-64 md:w-80 md:h-80 drop-shadow-2xl" />
 					</div>
 				</div>
 

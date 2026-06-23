@@ -6,6 +6,7 @@ export const marketingRoutes = [
 		index('features/marketing/home/routes/home.tsx'),
 		route('electrica', 'features/marketing/home/routes/electrica.tsx'),
 		route('ict-networks', 'features/marketing/home/routes/ict-networks.tsx'),
+		route('contact', 'features/marketing/home/routes/contact-us.tsx'),
 	]),
 
 	route('robots.txt', 'features/marketing/seo/routes/robots.ts'),

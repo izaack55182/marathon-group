@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, ChevronLeft, ChevronRight, Zap, Cpu, Network, Lightbulb, Wrench, Factory, Building2, HardHat, ShieldCheck, ZapOff, Settings, Wind, Ship, Plane, Car, Building, Trophy, Bed, Hospital } from 'lucide-react'
 import { cn } from '@/utils/misc'
+import { Icon } from '@/components/ui/icon'
 import { Button } from '@/components/ui/button'
 import {
 	Carousel,
@@ -111,7 +111,7 @@ export function ElectricaSection() {
 										: "text-slate-500 hover:text-slate-800 hover:bg-slate-100"
 								)}
 							>
-								<cat.icon className={cn("size-4", activeTab.id === cat.id ? "text-primary" : "text-slate-400")} />
+								<Icon name={cat.icon} size="sm" className={cn(activeTab.id === cat.id ? 'text-primary' : 'text-slate-400')} />
 								{cat.label}
 								{activeTab.id === cat.id && (
 									<motion.div
@@ -146,7 +146,7 @@ export function ElectricaSection() {
 									</div>
 									<div className="relative z-10 space-y-4">
 										<div className="size-12 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
-											<activeTab.icon className="w-6 h-6 text-white" />
+											<Icon name={activeTab.icon} size="md" className="text-white" />
 										</div>
 										<h4 className="text-3xl md:text-4xl font-black font-riccione tracking-tight">{activeTab.label}</h4>
 										<p className="text-slate-200 leading-relaxed font-light">
@@ -179,7 +179,7 @@ export function ElectricaSection() {
 																className="group flex items-start gap-3.5 p-3.5 rounded-xl bg-slate-50 hover:bg-white hover:shadow-lg hover:shadow-slate-200/50 border border-transparent transition-all duration-300"
 															>
 																<div className={cn("size-8 shrink-0 rounded-lg flex items-center justify-center transition-colors", section.bgColor)}>
-																	<item.icon className={cn("size-5", section.color)} />
+																	<Icon name={item.icon} size="sm" className={cn(section.color)} />
 																</div>
 																<span className="text-base font-bold text-slate-700 group-hover:text-slate-950 transition-colors pt-0.5">
 																	{item.label}

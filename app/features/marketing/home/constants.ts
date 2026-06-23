@@ -1,7 +1,3 @@
-import {
-	Zap, Cpu, Network, Lightbulb, Wrench, Wind, Ship, Plane, Car, Building, Trophy, Bed, Hospital,
-	Database, Server, Plug, Wifi, ShieldCheck, Globe, Waypoints
-} from 'lucide-react'
 
 export const HERO_DATA = {
 	title: 'ICT',
@@ -238,11 +234,35 @@ export const BRAND_SLOTS = [
 	['ti-america', 'treofan', 'tubacero', 'viscofan', 'volkwagen'],
 ]
 
-export const ELECTRICA_CATEGORIES = [
+import type { IconName } from '@/components/ui/icons/types'
+
+export type CategoryItem = {
+	label: string
+	icon: IconName
+}
+
+export type CategorySection = {
+	title: string
+	color: string
+	borderColor: string
+	bgColor: string
+	items: CategoryItem[]
+}
+
+export type Category = {
+	id: string
+	label: string
+	icon: IconName
+	description: string
+	image: string
+	sections: CategorySection[]
+}
+
+export const ELECTRICA_CATEGORIES: Category[] = [
 	{
 		id: 'cableado',
 		label: 'Cableado eléctrico',
-		icon: Zap,
+		icon: 'zap',
 		description: 'Contamos con una amplia gama de cables eléctricos flexibles especiales para diferentes aplicaciones de baja, media y alta tensión.',
 		image: '/images/electrical-division/electrical-wiring.webp',
 		sections: [
@@ -252,11 +272,11 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-primary',
 				bgColor: 'bg-primary/5',
 				items: [
-					{ label: 'Energía Eléctrica', icon: Zap },
-					{ label: 'Energía Eólica', icon: Wind },
-					{ label: 'Buques', icon: Ship },
-					{ label: 'Aeropuertos', icon: Plane },
-					{ label: 'Automóvil', icon: Car },
+					{ label: 'Energía Eléctrica', icon: 'zap' },
+					{ label: 'Energía Eólica', icon: 'wind' },         // ⚠️ agregar wind.svg
+					{ label: 'Buques', icon: 'ship' },                  // ⚠️ agregar ship.svg
+					{ label: 'Aeropuertos', icon: 'plane' },            // ⚠️ agregar plane.svg
+					{ label: 'Automóvil', icon: 'car' },               // ⚠️ agregar car.svg
 				]
 			},
 			{
@@ -265,10 +285,10 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-secondary',
 				bgColor: 'bg-secondary/5',
 				items: [
-					{ label: 'Oficinas', icon: Building },
-					{ label: 'Estadios y Sitios', icon: Trophy },
-					{ label: 'Hotelería', icon: Bed },
-					{ label: 'Hospitales', icon: Hospital },
+					{ label: 'Oficinas', icon: 'building' },            // ⚠️ agregar building.svg
+					{ label: 'Estadios y Sitios', icon: 'trophy' },    // ⚠️ agregar trophy.svg
+					{ label: 'Hotelería', icon: 'bed' },                // ⚠️ agregar bed.svg
+					{ label: 'Hospitales', icon: 'hospital' },         // ⚠️ agregar hospital.svg
 				]
 			}
 		]
@@ -276,7 +296,7 @@ export const ELECTRICA_CATEGORIES = [
 	{
 		id: 'automatizacion',
 		label: 'Automatización y control',
-		icon: Cpu,
+		icon: 'cpu',                                                    // ⚠️ agregar cpu.svg
 		description: 'Distribuimos una amplia gama de equipos electrónicos para los procesos de automatización y control de líneas de producción industrial.',
 		image: '/images/electrical-division/automatization-control.webp',
 		sections: [
@@ -286,9 +306,9 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-primary',
 				bgColor: 'bg-primary/5',
 				items: [
-					{ label: 'PLC y HMI', icon: Cpu },
-					{ label: 'Sensores', icon: Zap },
-					{ label: 'Actuadores', icon: Wrench },
+					{ label: 'PLC y HMI', icon: 'cpu' },               // ⚠️ agregar cpu.svg
+					{ label: 'Sensores', icon: 'zap' },
+					{ label: 'Actuadores', icon: 'wrench' },
 				]
 			}
 		]
@@ -296,7 +316,7 @@ export const ELECTRICA_CATEGORIES = [
 	{
 		id: 'canalizacion',
 		label: 'Canalización',
-		icon: Network,
+		icon: 'network',
 		description: 'Comercializamos una extensa variedad de soportería los cuales permiten el cuidado de los conductores, protegiéndolos de daños mecánicos, químicos, altas temperaturas y humedad; así como canalización flexible para aplicaciones especiales.',
 		image: '/images/electrical-division/canalization.webp',
 		sections: [
@@ -306,8 +326,8 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-primary',
 				bgColor: 'bg-primary/5',
 				items: [
-					{ label: 'Charola de Malla', icon: Network },
-					{ label: 'Tubería Conduit', icon: Wrench },
+					{ label: 'Charola de Malla', icon: 'network' },
+					{ label: 'Tubería Conduit', icon: 'wrench' },
 				]
 			}
 		]
@@ -315,7 +335,7 @@ export const ELECTRICA_CATEGORIES = [
 	{
 		id: 'iluminacion',
 		label: 'Iluminación',
-		icon: Lightbulb,
+		icon: 'lightbulb',                                              // ⚠️ agregar lightbulb.svg
 		description: 'Disponemos de múltiples opciones en iluminación industrial, comercial y residencial; así como generación de energía fotovoltaica.',
 		image: '/images/electrical-division/ilumination.webp',
 		sections: [
@@ -325,8 +345,8 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-primary',
 				bgColor: 'bg-primary/5',
 				items: [
-					{ label: 'Industrial High-Bay', icon: Lightbulb },
-					{ label: 'Oficinas / Panel', icon: Building },
+					{ label: 'Industrial High-Bay', icon: 'lightbulb' }, // ⚠️ agregar lightbulb.svg
+					{ label: 'Oficinas / Panel', icon: 'building' },     // ⚠️ agregar building.svg
 				]
 			}
 		]
@@ -334,7 +354,7 @@ export const ELECTRICA_CATEGORIES = [
 	{
 		id: 'herramientas',
 		label: 'Herramientas y accesorios',
-		icon: Wrench,
+		icon: 'wrench',
 		description: 'Contamos con herramientas y accesorios eléctricos de la más alta calidad, los cuales se adaptan a las necesidades de nuestros clientes. Estamos enfocamos en proveer soluciones a la medida a través de marcas premium como Milwaukee, Panduit, Burndy y Raco. Garantizando así un excelente desempeño y cumplimiento a los requerimientos del usuario final.',
 		image: '/images/electrical-division/tools.webp',
 		sections: [
@@ -344,19 +364,19 @@ export const ELECTRICA_CATEGORIES = [
 				borderColor: 'border-primary',
 				bgColor: 'bg-primary/5',
 				items: [
-					{ label: 'Herramienta Manual', icon: Wrench },
-					{ label: 'Equipos de Medición', icon: Zap },
+					{ label: 'Herramienta Manual', icon: 'wrench' },
+					{ label: 'Equipos de Medición', icon: 'zap' },
 				]
 			}
 		]
 	}
 ]
 
-export const ICT_CATEGORIES = [
+export const ICT_CATEGORIES: Category[] = [
 	{
 		id: 'cableado-estructurado',
 		label: 'Cableado estructurado',
-		icon: Network,
+		icon: 'network',
 		description: 'Soluciones de infraestructura de red de alto rendimiento para garantizar una conectividad fluida y escalable.',
 		image: '/images/ict-division/structured-cabling.webp',
 		sections: [
@@ -366,9 +386,9 @@ export const ICT_CATEGORIES = [
 				borderColor: 'border-secondary',
 				bgColor: 'bg-secondary/5',
 				items: [
-					{ label: 'Cobre Cat 6/6A/7', icon: Network },
-					{ label: 'Fibra Óptica OM4/OM5', icon: Waypoints },
-					{ label: 'Sistemas de Gestión', icon: Globe },
+					{ label: 'Cobre Cat 6/6A/7', icon: 'network' },
+					{ label: 'Fibra Óptica OM4/OM5', icon: 'git-branch' },
+					{ label: 'Sistemas de Gestión', icon: 'globe' },
 				]
 			},
 			{
@@ -377,8 +397,8 @@ export const ICT_CATEGORIES = [
 				borderColor: 'border-indigo-600',
 				bgColor: 'bg-indigo-50/5',
 				items: [
-					{ label: 'Seguridad Física', icon: ShieldCheck },
-					{ label: 'Puntos de Acceso WiFi', icon: Wifi },
+					{ label: 'Seguridad Física', icon: 'shield' },
+					{ label: 'Puntos de Acceso WiFi', icon: 'wifi' },  // ⚠️ agregar wifi.svg
 				]
 			}
 		]
@@ -386,7 +406,7 @@ export const ICT_CATEGORIES = [
 	{
 		id: 'data-center',
 		label: 'Data center',
-		icon: Database,
+		icon: 'server',
 		description: 'Soluciones críticas para centros de datos que requieren máxima confiabilidad, enfriamiento y eficiencia energética.',
 		image: '/images/ict-division/data-center.webp',
 		sections: [
@@ -396,9 +416,9 @@ export const ICT_CATEGORIES = [
 				borderColor: 'border-secondary',
 				bgColor: 'bg-secondary/5',
 				items: [
-					{ label: 'Contención de Pasillos', icon: Database },
-					{ label: 'PDU Inteligentes', icon: Plug },
-					{ label: 'Fibra de Alta Densidad', icon: Network },
+					{ label: 'Contención de Pasillos', icon: 'server' },
+					{ label: 'PDU Inteligentes', icon: 'plug' },
+					{ label: 'Fibra de Alta Densidad', icon: 'network' },
 				]
 			}
 		]
@@ -406,7 +426,7 @@ export const ICT_CATEGORIES = [
 	{
 		id: 'racks-gabinetes',
 		label: 'Racks y gabinetes',
-		icon: Server,
+		icon: 'server',
 		description: 'Sistemas de alojamiento y organización profesional para equipos activos y pasivos de red.',
 		image: '/images/ict-division/gabineters.webp',
 		sections: [
@@ -416,9 +436,9 @@ export const ICT_CATEGORIES = [
 				borderColor: 'border-secondary',
 				bgColor: 'bg-secondary/5',
 				items: [
-					{ label: 'Gabinetes de Piso', icon: Server },
-					{ label: 'Racks de 2 Postes', icon: Server },
-					{ label: 'Gestores de Cableado', icon: Waypoints },
+					{ label: 'Gabinetes de Piso', icon: 'server' },
+					{ label: 'Racks de 2 Postes', icon: 'server' },
+					{ label: 'Gestores de Cableado', icon: 'layers' },
 				]
 			}
 		]
@@ -426,7 +446,7 @@ export const ICT_CATEGORIES = [
 	{
 		id: 'ethernet-industrial',
 		label: 'Ethernet industrial',
-		icon: Plug,
+		icon: 'plug',
 		description: 'Conectividad robusta y blindada diseñada para resistir los entornos industriales más exigentes.',
 		image: '/images/ict-division/ethernet-industrial.webp',
 		sections: [
@@ -436,9 +456,9 @@ export const ICT_CATEGORIES = [
 				borderColor: 'border-secondary',
 				bgColor: 'bg-secondary/5',
 				items: [
-					{ label: 'Switching Industrial', icon: Cpu },
-					{ label: 'Cables M12 / IP67', icon: Plug },
-					{ label: 'Conectividad Fieldbus', icon: Network },
+					{ label: 'Switching Industrial', icon: 'cpu' },    // ⚠️ agregar cpu.svg
+					{ label: 'Cables M12 / IP67', icon: 'plug' },
+					{ label: 'Conectividad Fieldbus', icon: 'network' },
 				]
 			}
 		]

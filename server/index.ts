@@ -27,7 +27,16 @@ app.use('*', async (c, next) => {
 		c.header('Content-Type', 'image/svg+xml')
 	}
 	if (path.match(/\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2|ttf|otf|css|js)$/)) {
-		c.header('Cache-Control', 'public, max-age=31536000, immutable')
+		// Los assets emitidos por Vite en /assets/ llevan hash en el nombre, así
+		// que son seguros de cachear como inmutables. El resto (archivos de
+		// /public con nombre FIJO, como /icons/sprite.svg) deben revalidar: si no,
+		// al cambiar su contenido sin cambiar la URL, el CDN/navegador sigue
+		// sirviendo la versión vieja (iconos nuevos no aparecen).
+		if (path.startsWith('/assets/')) {
+			c.header('Cache-Control', 'public, max-age=31536000, immutable')
+		} else {
+			c.header('Cache-Control', 'public, max-age=300, must-revalidate')
+		}
 	}
 })
 

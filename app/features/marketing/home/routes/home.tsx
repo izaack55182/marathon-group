@@ -13,6 +13,7 @@ import { Testimonials } from '../components/testimonials'
 export async function loader() {
 	return {
 		title: 'Marathon Group',
+		decription: "Marathon Group somos líderes nacionales en material eléctrico, automatización, fibra óptica e ICT. La más alta calidad y 30 años de experiencia nos respaldan"
 	}
 }
 

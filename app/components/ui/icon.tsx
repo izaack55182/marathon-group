@@ -5,8 +5,8 @@ import type { IconName } from '@/components/ui/icons/types'
 // UTILS
 import { cn } from '@/utils/misc'
 
-// ASSETS
-import href from './icons/sprite.svg'
+// The sprite is served from /public, always available at this static URL
+const href = '/sprite.svg'
 
 const sizeClassName = {
 	font: 'size-[1em]',
@@ -35,17 +35,22 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 	testId?: string
 	className?: string
 	size?: IconSizes
+	/**
+	 * When true, skips the default `fill-none stroke-current` classes.
+	 * Use for SVG icons that have their own internal fills/colors (logos, illustrations).
+	 */
+	raw?: boolean
 }
 
 /**
  * Icon component wrapper for SVG icons.
  * @returns SVG icon as a react component
  */
-export function Icon({ name, size = 'font', testId, className, children, ...props }: IconProps) {
+export function Icon({ name, size = 'font', testId, className, children, raw = false, ...props }: IconProps) {
 	if (children) {
 		return (
 			<span className={`inline-flex items-center ${childrenSizeClassName[size]}`}>
-				<Icon name={name} size={size} className={className} {...props} />
+				<Icon name={name} size={size} className={className} raw={raw} {...props} />
 				{children}
 			</span>
 		)
@@ -54,7 +59,8 @@ export function Icon({ name, size = 'font', testId, className, children, ...prop
 		<svg
 			className={cn(
 				sizeClassName[size],
-				'inline-block flex-shrink-0 self-center fill-none stroke-current',
+				!raw && 'inline-block flex-shrink-0 self-center fill-none stroke-current',
+				raw && 'inline-block flex-shrink-0 self-center',
 				className
 			)}
 			data-testid={testId}

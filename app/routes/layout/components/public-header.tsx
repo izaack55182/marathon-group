@@ -141,7 +141,7 @@ export function Header() {
 
 					<div className="flex items-center gap-1.5 md:gap-2">
 						<div className="hidden md:flex items-center gap-3">
-							<Link to="#" className={cn(navigationMenuTriggerStyle(), 'bg-transparent text-base font-semibold hover:bg-accent/50')}>
+							<Link to="/contact" className={cn(navigationMenuTriggerStyle(), 'bg-transparent text-base font-semibold hover:bg-accent/50')}>
 								Contacto
 							</Link>
 							<Link to="/#" className={cn(buttonVariants({ variant: 'ghost', size: 'default' }), 'bg-transparent text-base font-semibold hover:bg-accent/50')}>
