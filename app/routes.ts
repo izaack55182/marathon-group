@@ -1,10 +1,6 @@
 import { layout, prefix, type RouteConfig, route } from '@react-router/dev/routes'
-import { accountingRoutes } from './features/accounting/routes'
-import { crmRoutes } from './features/crm/routes'
 // Importamos las rutas de las features
 import { marketingRoutes } from './features/marketing/routes'
-import { securityRoutes } from './features/security/routes'
-import { settingsRoutes } from './features/settings/routes'
 import { userRoutes } from './features/user/routes'
 
 export default [

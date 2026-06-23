@@ -1,4 +1,5 @@
 import type { MetaFunction } from 'react-router'
+import { getMeta } from '@/utils/misc'
 
 // COMPONENTS
 import { BrandGrid } from '../components/brand-grid'
@@ -13,7 +14,8 @@ import { Testimonials } from '../components/testimonials'
 export async function loader() {
 	return {
 		title: 'Marathon Group',
-		decription: "Marathon Group somos líderes nacionales en material eléctrico, automatización, fibra óptica e ICT. La más alta calidad y 30 años de experiencia nos respaldan"
+		description:
+			'Marathon Group somos líderes nacionales en material eléctrico, automatización, fibra óptica e ICT. La más alta calidad y 30 años de experiencia nos respaldan.',
 	}
 }
 
@@ -32,6 +34,11 @@ export default function Home() {
 	)
 }
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
-	return [{ title: data?.title ?? 'Marathon Group' }]
+export const meta: MetaFunction<typeof loader> = ({ data, matches, location }: any) => {
+	return getMeta({
+		title: data?.title,
+		description: data?.description,
+		matches,
+		pathname: location.pathname,
+	})
 }

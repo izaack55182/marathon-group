@@ -25,7 +25,7 @@ export const SITE_CONFIG = {
 		'Marathon Group. Expertos en soluciones de energía, infraestructura y tecnología.',
 
 	/** Imagen OG por defecto (ruta relativa a /public) */
-	ogImage: '/social-preview.png',
+	ogImage: '/social-preview.webp',
 
 	/** Locale para Open Graph */
 	locale: 'es_MX',

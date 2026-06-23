@@ -11,6 +11,7 @@ import {
 // UTILS
 import { ClientHintCheck, getHints } from '@/utils/client-hints'
 import { getColorScheme } from '@/utils/color-scheme.server'
+import { SITE_CONFIG } from '@/config/site'
 import { createDomain, getMeta } from '@/utils/misc'
 
 // COMPONENTS
@@ -29,7 +30,7 @@ import appleTouchIconAssetUrl from '/favicons/apple-touch-icon.png'
 import faviconAssetUrl from '/favicons/favicon.png'
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
-	const origin = data?.origin ?? 'https://codenity-stack.pages.dev'
+	const origin = data?.origin ?? SITE_CONFIG.url
 	return getMeta({ origin })
 }
 
